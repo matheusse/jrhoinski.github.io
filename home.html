@@ -1,0 +1,3319 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author-developer" content="Allan Gustavo Sartor Metzner">
+    <meta name="author-script" content="Leticia Caroline Calado da Rosa">
+    <meta name="description" content="Guia - Monitoria vivo">
+    <meta name="keywords" content="Aplicação web">
+    <title>VIVO - GUIA</title>
+
+    <!-- icones google/materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/stilo.css" />
+    <link rel="stylesheet" href="css/materialize.min.css">
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <nav class="nav-extended">
+        <div class="nav-logo"></div>
+        <div class="nav-wrapper"><a class="brand-logo center"><b>VIVO - GUIA</b></a></div>
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent center">
+                <li class="tab"><a class="active" href="#guia-1"><b>Guia - OCORRÊNCIAS</b></a></li>
+                <li class="tab"><a href="#guia-2"><b>Guia - OFERTA</b></a></li>
+                <li class="tab"><a href="#guia-3"><b>Guia - ATENDIMENTO</b></a></li>
+                <li class="tab"><a href="#guia-4"><b>INOPERÂNCIA SISTEMICA</b></a></li>
+                <!-- <li class="tab"><a href="#guia-5"><b>FeedBack</b></a></li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- div OP ocorrencia -->
+    <div id="guia-1">
+        <!-- TEXTO PRINCIPAL  -->
+        <span class="purple-text" align="center">
+            <h5><b>Abordagem Inicial</b></h5>
+        </span>
+        <!-- BOX TEXTO PRINCIPAL -->
+        <div class="Box1">
+            <div class="row">
+                <div class="container" align="center">
+                    <br>
+                    <img src="img/sorrisovoz.PNG" height="110px" width="135px">
+                    <p><b>Bom dia/Boa tarde, o "João" está ?
+                            <br>
+                            <br>
+                            "Meu nome é "MARIANA", falo da Assessoria SERVICES, em nome da Operadora Vivo!"
+                            <br>
+                            Para a sua segurança, essa ligação está sendo gravada.
+                            <br>
+                            <br>
+                            Confirme seu nome completo,
+                            ou os 3 primeiros dígitos do seu CPF, para que eu possa prosseguir com o atendimento.
+                            <br>
+                            <br>
+                            <font color="purple">Terceiros:</font> Mantém o PID, nome, grau de parentesco e se é
+                            responsável pela linha.
+                    </p></b>
+                    <form action="#">
+                        <p>
+                            <label>
+                                <input id="checkbox" type="checkbox" />
+                                <span>Feito</span>
+                            </label>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- SELECT OCORRENCIAS -->
+        <div id="ocorrenciasBox" class="box">
+            <span class="purple-text" align="center">
+                <h5><b>Qual ocorrência deseja pesquisar?</b></h5>
+            </span>
+            <div id="ocorrencias">
+                <select id="opcao" name="select" class="browser-default">
+                    <option value="" disabled selected>Ocorrências</option>
+                    <option value="op1">1000 - Acordo À Vista</option>
+                    <option value="op2">1001 - Acordo Parcelado</option>
+                    <option value="op3">1002 - Promessa Fatura</option>
+                    <option value="op4">2001 - Sem interesse - Quer mais parcelas</option>
+                    <option value="op6">2003 - Sem interesse - Data não favorável</option>
+                    <option value="op7">2004 - Sem interesse - Em negociar</option>
+                    <option value="op8">3000 - Retorno Agendado Direto</option>
+                    <option value="op9">3002 - Promessa Vigente</option>
+                    <option value="op10">3003 - Suspeita de Fraude</option>
+                    <option value="op11">3004 - Desconhece o Débito</option>
+                    <option value="op12">3006 - Contestação de Dívida</option>
+                    <option value="op13">3007 - Alega Pagamento</option>
+                    <option value="op14">4000 - Recado</option>
+                    <option value="op15">4001 - Secretária Eletrônica / Caixa postal</option>
+                    <option value="op16">4002 - Ligação Perdida</option>
+                    <option value="op17">4003 - Ligação Caiu</option>
+                    <option value="op18">4006 - Retorno Agendado Indireto</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <!--CONTAINER DE OPCOES-->
+        <div id="escolhas" style="display: block;">
+            <!--ACORDO A VISTA -->
+            <div id="op1" class="box" align="center" style="display: none;">
+                <div class="geral">
+                    <br>
+                    <font color="purple">
+                        <h5><b>ACORDO À VISTA</b></h5>
+                    </font>
+                    <br>
+                    <b>Quando for enviar boleto no e-mail do cliente.</b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>NEGOCIAÇÃO:</b></font>
+                    <br>
+                    <b>Informe as faturas e valores em aberto, ARGUMENTE de acordo com a "régua de cobrança", <font
+                            color="purple">priorizando o pagamento entre hoje e amanhã.</font></b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>ARGUMENTAÇÃO:</b></font>
+                    <br>
+                    <b>Informe os bloqueios na(s) linha(s), lembre-se que juros e multa serão atualizados diariamente e
+                        ligações de cobranças serão contínuas.</b>
+                    <br>
+                    <br>
+                    <!-- botoes ofertas -->
+                    <font color="purple"><b>VOCÊ OFERTA ?</b></font>
+                    <br>
+                    <div>
+                        <a class="waves-effect waves-light btn-small purple lighten-2 yesButton">Sim</a>
+                        <a class="waves-effect waves-light btn-small purple lighten-2  noButton">Não</a>
+                    </div>
+                    <div class="box offerbox">
+                        <br>
+                        <div class="selo">
+                            <br>
+                            <font color="Indigo"><b>
+                                    <img src="img/beneficio.PNG" height="35px" width="45px">
+                                    <br> OFEREÇA A REDUÇÃO NO VALOR DO PLANO COMO UMA FORMA DE BENEFÍCIO AO CLIENTE
+                                    <br>
+                                    POR TER FECHADO UM ACORDO NAQUELA CHAMADA
+                                </b>
+                            </font>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="selo">
+                            <br>
+                            <b>
+                                <font color="purple">VOCÊ TAMBÉM PODE OFERECER BENEFÍCIOS AO CLIENTE COMO:</font>
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• FATURA DIGITAL: </font> "O cliente passa a receber as faturas
+                                mensalmente no e-mail de sua preferência,<br> facilitando o recebimento do boleto em
+                                casos de greve nos correios. Tudo ao alcance de um clique."
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• DACC: </font> "No DACC (débito automático em conta corrente), o
+                                valor é descontado diretamente do banco credenciado do titular,<br>
+                                evitando esquecimentos, e facilitando o pagamento sem que o cliente precise sair de
+                                casa."
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• TROCA DE VENCIMENTO: </font> "A alteração na data de vencimento
+                                pode ser ofertado ao cliente para facilitar o pagamento, de uma forma que a data de
+                                vencimento da fatura, fique próximo a data de recebimento do cliente, evitando o atraso
+                                no pagamento das faturas."
+                            </b>
+                        </div>
+                    </div>
+                    <br>
+                    <font color="purple"><b>ATUALIZAÇÃO CADASTRAL</b></font>
+                    <br>
+                    <b>"Fora esse telefone teria algum outro número para o contato?; Possui e-mail?"</b>
+                    <br>
+                    <br>
+                    <font color="purple"><b> * GRAVE O ACORDO NO SISTEMA PASSANDO PARA O CLIENTE O VALOR ATUALIZADO *
+                        </b></font>
+                    <br>
+                    <font color="purple"><b>Nectar / ZAAP</b></font>
+                    <br><br>
+                    <font color="purple"><b>QUAL MOTIVO DA INADIMPLÊNCIA ?</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b>OCORRÊNCIA COM CLIENTE EM LINHA</b></font>
+                    <br>
+                    <b>
+                        "(Nome de quem negociou)" confirma o pagamento da fatura: "XX/XX/XXXX" no valor de R$ "XX"
+                        <br>
+                        (método de pagamento) será realizado com o boleto que deverá ser enviado no e-mail do cliente:
+                        "xxxxx@xxxxx.com.br"
+                        <br>
+                        com vencimento para o dia "XX/XX/XXXX".
+                    </b>
+                    <br>
+                    <br>
+                    <p class="selo">
+                        <br>
+                        <font color="purple"><b>SELO DO ACORDO:</b></font>
+                        <br>
+                        <br>
+                        <b>"Senhor (a), então ficou agendado o pagamento da fatura "XX/XX" no valor total de R$"XX,XX”,
+                            para o dia "XX/XX",
+                            <br>
+                            através da fatura que será encaminhada no seu e-mail com o termo de acordo em anexo.
+                            <br>
+                            Peço que verifique a caixa de SPAM e a LIXEIRA ELETRÔNICA em seu e-mail.
+                            <br>
+                            É Importante o pagamento na data agendada para que não ocorra uma QUEBRA DE ACORDO com a
+                            Vivo!
+                        </b>
+                    </p>
+                    <font color="purple"><b>Alguma dúvida ?</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b>A Vivo Agradece a sua atenção, tenha um bom dia/boa tarde!</b></font>
+                    <br>
+                    <br>
+                    <img class="imgTotal" src="img/sorrisorapaz2.PNG">
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!-- ACORDO PARCELADO -->
+            <div id="op2" class="box" align="center" style="display: none;">
+                <br>
+                <div class="geral">
+                    <br>
+                    <b>
+                        <font color="purple">
+                            <h5><b>ACORDO PARCELADO</b></h5>
+                        </font>
+                    </b>
+                    <br>
+                    <b>Quando o cliente não conseguir fazer o pagamento das faturas em aberto no valor integral.</b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>NEGOCIAÇÃO:</b></font>
+                    <br>
+                    <b>Informe as faturas e os valores pendentes, incluindo todas as faturas que estão em aberto no
+                        Néctar,
+                        <br>
+                        podendo também incluir a fatura que ainda não venceu, você também pode utilizar a parcela mínima
+                        no valor de entrada para facilitar o pagamento. </b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>* PRIORIZAR PAGAMENTO ENTRE HOJE OU AMANHÃ *</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b>* ESTENDA OS PRAZOS E A QUANTIDADE DE PARCELAS DE MANEIRA GRADATIVA *</b>
+                    </font>
+                    <br>
+                    <br>
+                    <font color="purple"><b> * GRAVE O ACORDO NO SISTEMA * </b></font>
+                    <br>
+                    <font color="purple"><b>Nectar / ZAAP</b></font>
+                    <br><br>
+                    <!-- botoes ofertas -->
+                    <font color="purple"><b>VOCÊ OFERTA ?</b></font>
+                    <br>
+                    <div>
+                        <a class="waves-effect waves-light btn-small purple lighten-2 yesButton">Sim</a>
+                        <a class="waves-effect waves-light btn-small purple lighten-2  noButton">Não</a>
+                    </div>
+                    <div class="box offerbox">
+                        <br>
+                        <div class="selo">
+                            <br>
+                            <font color="Indigo"><b>
+                                    <img src="img/beneficio.PNG" height="35px" width="45px">
+                                    <br> OFEREÇA A REDUÇÃO NO VALOR DO PLANO COMO UMA FORMA DE BENEFÍCIO AO CLIENTE
+                                    <br>
+                                    POR TER FECHADO UM ACORDO NAQUELA CHAMADA
+                                </b></font>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="selo">
+                            <br>
+                            <b>
+                                <font color="purple">VOCÊ TAMBÉM PODE OFERECER BENEFÍCIOS AO CLIENTE COMO:</font>
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• FATURA DIGITAL: </font> "O cliente passa a receber as faturas
+                                mensalmente no e-mail de sua preferência,<br> facilitando o recebimento do boleto em
+                                casos de greve nos correios. Tudo ao alcance de um clique."
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• DACC: </font> "No DACC (débito automático em conta corrente), o
+                                valor é descontado diretamente do banco credenciado do titular,<br>
+                                evitando esquecimentos, e facilitando o pagamento sem que o cliente precise sair de
+                                casa."
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• TROCA DE VENCIMENTO: </font> "A alteração na data de vencimento
+                                pode ser ofertado ao cliente para facilitar o pagamento, de uma forma que a data de
+                                vencimento da fatura, fique próximo a data de recebimento do cliente, evitando o atraso
+                                no pagamento das faturas."
+                            </b>
+                        </div>
+                    </div>
+                    <br>
+                    <font color="purple"><b>ATUALIZAÇÃO CADASTRAL</b></font>
+                    <br>
+                    <b>"Fora esse telefone teria algum outro número para contato?; Possui e-mail?"</b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>QUAL MOTIVO DA INADIMPLÊNCIA ?</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b>OCORRÊNCIA COM CLIENTE EM LINHA</b></font>
+                    <br>
+                    <b>
+                        (Nome com quem negociou) confirma pagamento da fatura: "XX/XX" no valor total: R$ "XX,XX".
+                        <br>
+                        Entrada de R$ "XX,XX" + "X" vezes de R$ "XX,XX" através (forma de pagamento)".
+                    </b>
+                    <br>
+                    <br>
+                    <p class="selo">
+                        <br>
+                        <font color="purple"><b>SELO DO ACORDO:</b></font>
+                        <br>
+                        <br>
+                        <b>"Senhor (a), então ficou agendado o pagamento do parcelamento que estão inclusas as faturas
+                            "XX/XX",
+                            <br>
+                            no valor total de R$ "XX,XX", com 1 entrada de R$"XX,XX" e mais "XX" vezes de R$"XX,XX",
+                            para o dia "XX/XX",
+                            <br>
+                            através do boleto que estarei enviando em seu e-mail e em anexo estará o TERMO DE ACORDO.
+                            <br>
+                            <br>
+                            Seu parcelamento se inicia no mês XX e finaliza no mês XX.
+                            <br>
+                            É importante que você efetue o pagamento tanto das faturas mensais quanto as do parcelamento
+                            na data combinada,
+                            <br>
+                            para que não ocorra uma QUEBRA DE ACORDO com a Vivo.
+                            <br>
+                            Durante o parcelamento seu serviço de voz ficará bloqueado para ligações DDD e DDI,<br>
+                            chamadas para celular, não recebe a cobrar e não liga para 0300 - 0500 - 0900.
+                        </b>
+
+                    </p>
+                    <br>
+                    <font color="purple"><b>Alguma dúvida ?</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b>A Vivo Agradece a sua atenção, tenha um bom dia/boa tarde!</b></font>
+                    <br>
+                    <br>
+                    <img class="imgTotal" src="img/moca1.PNG">
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!-- PROMESSA FATURA -->
+            <div id="op3" class="box" align="center" style="display: none;">
+                <br>
+                <div class="geral">
+                    <br>
+                    <font color="purple">
+                        <h5><b>PROMESSA FATURA</b></h5>
+                    </font>
+                    <br>
+                    <b>Quando o cliente informa que vai pagar com a fatura original, segunda via no Site/app ou vai
+                        pagar na lotérica com o número de CPF ou telefone.</b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>NEGOCIAÇÃO:</b></font>
+                    <br>
+                    <b>Informe as faturas e valores em aberto, ARGUMENTE com a "régua de cobrança", <font
+                            color="purple">priorizando o pagamento entre hoje ou amanhã.</font></b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>ARGUMENTAÇÃO:</b></font>
+                    <br>
+                    <b>Informe os bloqueios na(s) linha(s), lembre-se que juros e multas serão atualizados diariamente e
+                        ligações de cobranças serão contínuas.</b>
+                    <br>
+                    <br>
+                    <!-- botoes ofertas -->
+                    <font color="purple"><b>VOCÊ OFERTA ?</b></font>
+                    <br>
+                    <div>
+                        <a class="waves-effect waves-light btn-small purple lighten-2 yesButton">Sim</a>
+                        <a class="waves-effect waves-light btn-small purple lighten-2  noButton">Não</a>
+                    </div>
+                    <div class="box offerbox">
+                        <br>
+                        <div class="selo">
+                            <br>
+                            <font color="Indigo"><b>
+                                    <img src="img/beneficio.PNG" height="35px" width="45px">
+                                    <br>
+                                    OFEREÇA A REDUÇÃO NO VALOR DO PLANO COMO UMA FORMA DE BENEFÍCIO AO CLIENTE
+                                    <br>
+                                    POR TER FECHADO UM ACORDO NAQUELA CHAMADA
+                                </b></font>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="selo">
+                            <br>
+                            <b>
+                                <font color="purple">VOCÊ TAMBÉM PODE OFERECER BENEFÍCIOS AO CLIENTE COMO:</font>
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• FATURA DIGITAL: </font> "O cliente passa a receber as faturas
+                                mensalmente no e-mail de sua preferência,<br> facilitando o recebimento do boleto em
+                                casos de greve nos correios. Tudo ao alcance de um clique."
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• DACC: </font> "No DACC (débito automático em conta corrente), o
+                                valor é descontado diretamente do banco credenciado do titular,<br>
+                                evitando esquecimentos, e facilitando o pagamento sem que o cliente precise sair de
+                                casa."
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• TROCA DE VENCIMENTO: </font> "A alteração na data de vencimento
+                                pode ser ofertado ao cliente para facilitar o pagamento, de uma forma que a data de
+                                vencimento da fatura, fique próximo a data de recebimento do cliente, evitando o atraso
+                                no pagamento das faturas."
+                            </b>
+                        </div>
+                    </div>
+                    <br>
+                    <font color="purple"><b>ATUALIZAÇÃO CADASTRAL</b></font>
+                    <br>
+                    <b>"Fora esse telefone teria algum outro número para o contato?; Possui e-mail?"</b>
+                    <br>
+                    <br>
+                    <font color="purple"><b> * GRAVE O ACORDO NO SISTEMA PASSANDO PARA O CLIENTE O VALOR ATUALIZADO *
+                        </b></font>
+                    <br>
+                    <font color="purple"><b>Nectar / ZAAP</b></font>
+                    <br><br>
+                    <font color="purple"><b>QUAL MOTIVO DA INADIMPLÊNCIA ?</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b>OCORRÊNCIA COM CLIENTE EM LINHA</b></font>
+                    <br>
+                    <b>
+                        "(Nome de quem negociou)" confirma o pagamento da fatura: "XX/XX/XXXX" no valor de R$ "XX,XX"
+                        <br>
+                        via
+                        (método de pagamento) da fatura "XX/XX" para o dia "XX/XX/XXXX".
+                        <br>
+                    </b>
+                    <br>
+                    <br>
+                    <p class="selo">
+                        <br>
+                        <font color="purple"><b>SELO DE ACORDO:</b></font>
+                        <br>
+                        <br>
+                        <b>"Senhor (a), então ficou agendado o pagamento da fatura "XX/XX" no valor total de R$ "XX,XX”,
+                            para o dia "XX/XX",
+                            <br>
+                            através da fatura que será encaminhada no seu e-mail com o termo de acordo em anexo.
+                            <br>
+                            Peço que verifique a caixa de SPAM e a LIXEIRA ELETRÔNICA do seu e-mail.
+                            <br>
+                            É Importante o pagamento na data agendada para que não ocorra uma QUEBRA DE ACORDO com a
+                            Vivo!
+                        </b>
+                    </p>
+                    <font color="purple"><b>Alguma dúvida ?</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b>A Vivo Agradece a sua atenção, tenha um bom dia/boa tarde!</b></font>
+                    <br>
+                    <br>
+                    <img class="imgTotal" src="img/moca1.PNG">
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!-- SEM INT QUER MAIS PARCELAS -->
+            <div id="op4" class="box" align="center" style="display: none;">
+                <br>
+                <div class="geral">
+                    <br>
+                    <font color="purple">
+                        <h5><b>SEM INTERESSE EM NEGOCIAR - QUER MAIS PARCELAS</b></h5>
+                    </font>
+                    <br>
+                    <b>"Quando o cliente não aceita o parcelamento oferecido."</b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>NEGOCIAÇÃO:</b></font>
+                    <br>
+                    <b>"Informar faturas e valores em aberto, <font color="purple"><b>ARGUMENTAR</b></font> de acordo
+                        com a "régua de cobrança" priorizando o pagamento imediato à vista ou dentro do prazo (D+3)."
+                        <br><br>
+                        <font color="purple">ARGUMENTAÇÃO:</font>
+                        <br>
+                        "Informando bloqueios na linha e lembrando que juros e multa são atualizados
+                        diariamente"
+                    </b>
+                    <p>
+                        <b>
+                            <font color="purple">OFERTAR:</font>
+                            <br>
+                            Parcelamento (permitido acima de duas
+                            faturas em aberto, com valor superior a R$100,00) <br> oferecer o parcelamento de maneira
+                            gradativa dentro do limite de pagamento imediato, pode-se oferecer ao cliente a parcela
+                            mínima de entrada.<br> Caso o cliente solicite mais parcelas, estender o prazo para o (D+3),
+                            e tentar argumentar com o cliente dentro da nova data.
+                        </b>
+                    </p>
+                    <br>
+                    <!-- botoes ofertas -->
+                    <font color="purple"><b>VOCÊ OFERTA ?</b></font>
+                    <br>
+                    <div>
+                        <a class="waves-effect waves-light btn-small purple lighten-2 yesButton">Sim</a>
+                        <a class="waves-effect waves-light btn-small purple lighten-2  noButton">Não</a>
+                    </div>
+                    <div class="box offerbox">
+                        <br>
+                        <div class="selo">
+                            <br>
+                            <font color="Indigo"><b> <img src="img/beneficio.PNG" height="35px" width="45px">
+                                    <br>
+                                    OFEREÇA A REDUÇÃO NO VALOR DO PLANO DO CLIENTE PARA TENTAR UMA NEGOCIAÇÃO
+                                    <br>
+                                    DOS DÉBITOS EM ABERTO.
+                                </b></font>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="selo">
+                            <br>
+                            <b>
+                                <font color="purple">VOCÊ TAMBÉM PODE OFERECER BENEFÍCIOS AO CLIENTE COMO:</font>
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• FATURA DIGITAL: </font> "O cliente passa a receber as faturas
+                                mensalmente no e-mail de sua preferência,<br> facilitando o recebimento do boleto em
+                                casos de greve nos correios. Tudo ao alcance de um clique."
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• DACC: </font> "No DACC (débito automático em conta corrente), o
+                                valor é descontado diretamente do banco credenciado do titular,<br>
+                                evitando esquecimentos, e facilitando o pagamento sem que o cliente precise sair de
+                                casa."
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• TROCA DE VENCIMENTO: </font> "A alteração na data de vencimento
+                                pode ser ofertado ao cliente para facilitar o pagamento, de uma forma que a data de
+                                vencimento da fatura, fique próximo a data de recebimento do cliente, evitando o atraso
+                                no pagamento das faturas."
+                            </b>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <font color="purple"><b>* PRIORIZAR PAGAMENTO ENTRE HOJE OU AMANHÃ *</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b>* EM CASOS DE SEM INTERESSE, NÃO SE REGISTRA PROMESSA / ACORDO *</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b> ATUALIZAÇÃO CADASTRAL </b></font>
+                    <br>
+                    <b>"Fora esse telefone qual seria outro para contato?; Possui e-mail?"</b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>QUAL MOTIVO DA INADIMPLÊNCIA?</b></font>
+                    <br>
+                    <font color="purple"><b>EXEMPLO:</b></font><b>"Perguntar ao cliente o motivo do não pagamento da
+                        fatura que venceu e porque não pode negociar no momento"</b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>OCORRÊNCIA COM CLIENTE EM LINHA</b></font>
+                    <br>
+                    <b>Inserir dentro da ocorrência as informações da propostas passada ao cliente incluindo a fatura e
+                        valores.<br>"NOME COM QUEM NEGOCIOU", "DATA PREVISTA PARA PAGAMENTO" e o "MOTIVO" de não poder
+                        negociar nesse atendimento.</b>
+                    <br>
+                    <br>
+                    <p class="selo">
+                        <font color="purple"><b>FRASEOLOGIA FINAL:</b></font><br><br><b>"Consequências: Senhor como não
+                            ficou agendado nenhuma data para pagamento, vou deixa-lo ciente que juros e multas serão
+                            diários,<br> ligações de cobranças serão constantes, podendo acontecer o bloqueio XX em seus
+                            serviços.​</b>
+                    </p>
+                    <br>
+                    <font color="purple"><b>Alguma dúvida ?</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b>A Vivo Agradece, tenha um bom dia/boa tarde!</b></font>
+                    <br>
+                    <br>
+                    <img class="imgTotal" src="img/sorrisorapaz2.PNG">
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!-- SEM INT DATA NAO FAVORAVEL -->
+            <div id="op6" class="box" align="center" style="display: none;">
+                <div class="geral">
+                    <br>
+                    <font color="purple">
+                        <h5><b>SEM INTERESSE EM NEGOCIAR - DATA NAO FAVORÁVEL</b></h5>
+                    </font>
+                    <br>
+                    <b>"Quando o cliente não aceita o parcelamento oferecido."</b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>NEGOCIAÇÃO:</b></font>
+                    <br>
+                    <b>"Informar faturas e valores em aberto, <font color="purple"><b>ARGUMENTAR</b></font> com a "régua
+                        de cobrança" priorizando o pagamento imediato à vista ou dentro do prazo (D+3)."
+                        <br><br>
+                        <font color="purple">ARGUMENTAÇÃO:</font>
+                        <br>
+                        "Informando bloqueios na linha e lembrando que juros e multa são atualizados
+                        diariamente"
+                        <br>
+                    </b>
+                    <p><b>
+                            <font color="purple">OFERTAR:</font><br> Parcelamento (permitido acima de duas
+                            faturas em aberto, com valor superior a R$100,00) <br> oferecer o parcelamento de maneira
+                            gradativa dentro do limite de pagamento imediato, pode-se oferecer ao cliente a parcela
+                            mínima de entrada.<br> Caso o cliente solicite mais parcelas, estender o prazo para o (D+3),
+                            e tentar argumentar com o cliente dentro da nova data.
+                        </b>
+                    </p>
+                    <br>
+                    <!-- botoes ofertas -->
+                    <font color="purple"><b>VOCÊ OFERTA ?</b></font>
+                    <br>
+                    <div>
+                        <a class="waves-effect waves-light btn-small purple lighten-2 yesButton">Sim</a>
+                        <a class="waves-effect waves-light btn-small purple lighten-2  noButton">Não</a>
+                    </div>
+                    <div class="box offerbox">
+                        <br>
+                        <div class="selo">
+                            <font color="Indigo"><b>
+                                    <img src="img/beneficio.PNG" height="35px" width="45px">
+                                    <br>
+                                    OFEREÇA A REDUÇÃO NO VALOR DO PLANO DO CLIENTE PARA TENTAR UMA NEGOCIAÇÃO
+                                    <br>
+                                    DOS DÉBITOS EM ABERTO.
+                                </b></font>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="selo">
+                            <br>
+                            <b>
+                                <font color="purple">VOCÊ TAMBÉM PODE OFERECER BENEFÍCIOS AO CLIENTE COMO:</font>
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• FATURA DIGITAL: </font> "O cliente passa a receber as faturas
+                                mensalmente no e-mail de sua preferência,<br> facilitando o recebimento do boleto em
+                                casos de greve nos correios. Tudo ao alcance de um clique."
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• DACC: </font> "No DACC (débito automático em conta corrente), o
+                                valor é descontado diretamente do banco credenciado do titular,<br>
+                                evitando esquecimentos, e facilitando o pagamento sem que o cliente precise sair de
+                                casa."
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• TROCA DE VENCIMENTO: </font> "A alteração na data de vencimento
+                                pode ser ofertado ao cliente para facilitar o pagamento, de uma forma que a data de
+                                vencimento da fatura, fique próximo a data de recebimento do cliente, evitando o atraso
+                                no pagamento das faturas."
+                            </b>
+                        </div>
+                    </div>
+                    <!-- fim ofertas -->
+                    <br>
+                    <br>
+                    <font color="purple"><b>* PRIORIZAR PAGAMENTO ENTRE HOJE OU AMANHÃ *</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b>* EM CASOS DE SEM INTERESSE, NÃO SE REGISTRA PROMESSA / ACORDO *</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b> ATUALIZAÇÃO CADASTRAL </b></font>
+                    <br>
+                    <b>"Fora esse telefone qual seria outro para contato?; Possui e-mail?"</b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>QUAL MOTIVO DA INADIMPLÊNCIA?</b></font>
+                    <br>
+                    <font color="purple"><b>EXEMPLO:</b></font><b>"Perguntar ao cliente o motivo do não pagamento da
+                        fatura que venceu e porque não pode negociar no momento"</b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>OCORRÊNCIA COM CLIENTE EM LINHA</b></font>
+                    <br>
+                    <b>Inserir dentro da ocorrência as informações da propostas passada ao cliente incluindo a fatura e
+                        valores.<br>"NOME COM QUEM NEGOCIOU", "DATA PREVISTA PARA PAGAMENTO" e o "MOTIVO" de não poder
+                        negociar nesse atendimento.</b>
+                    <br>
+                    <br>
+                    <p class="selo">
+                        <br>
+                        <font color="purple"><b>FRASEOLOGIA FINAL:</b></font><br><br><b>"Consequências: Senhor como não
+                            ficou agendado nenhuma data para pagamento, vou deixa-lo ciente que juros e multas serão
+                            diários,<br> ligações de cobranças serão constantes, podendo acontecer o bloqueio XX em seus
+                            serviços.​</b>
+                    </p>
+                    <br>
+                    <font color="purple"><b>Alguma dúvida ?</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b>A Vivo Agradece, tenha um bom dia/boa tarde!</b></font>
+                    <br>
+                    <br>
+                    <img class="imgTotal" src="img/moca4.PNG">
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!-- SEM INT EM NEGOCIAR -->
+            <div id="op7" class="box" align="center">
+                <div class="geral">
+                    <br>
+                    <font color="purple">
+                        <h5><b>SEM INTERESSE - EM NEGOCIAR</b></h5>
+                    </font>
+                    <br>
+                    <b>“Quando o cliente não demonstra interesse em negociar durante a chamada"</b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>NEGOCIAÇÃO:</b></font>
+                    <br>
+                    <b>
+                        "Informar faturas e valores em aberto, <font color="purple"><b>ARGUMENTAR</b></font> com a
+                        "régua
+                        de cobrança" priorizando o pagamento imediato à vista ou dentro do prazo (D+3)."
+                        <br>
+                        <br>
+                        <font color="purple">ARGUMENTAÇÃO:</font>
+                        <br>
+                        "Questione o motivo pelo qual o cliente não pode pagar a fatura, de acordo com a resposta,
+                        utilize a régua de cobrança para negociar.”
+                        <br>
+                        Informe os bloqueios na linha e lembre que juros e multa são atualizados diariamente"
+                    </b>
+                    <br>
+                    <p class="selo">
+                        <b>
+                            <br>
+                            <font color="purple">EXEMPLOS:</font>
+                            <br>
+                            <br>
+                            <font color="purple">CLIENTE NÃO POSSUI DINHEIRO NECESSÁRIO</font>
+                            <br>
+                            "Alegue o acréscimo de juros e multas diariamente."
+                            <br>
+                            <br>
+                            <font color="purple">CLIENTE NÃO RECEBE FATURA</font>
+                            <br>
+                            "Informe a disponibilidade de pagamento em casas lotéricas com o CPF e o número do telefone
+                            ou ofereça encaminhar a fatura no e-mail."
+                            <br>
+                            <br>
+                            <font color="purple">●</font>
+                            Situações que demandam maiores esclarecimentos, devem ser encaminhadas à central da vivo no
+                            10315.
+                        </b>
+                    </p>
+                    <br>
+                    <!-- botoes ofertas -->
+                    <font color="purple"><b>VOCÊ OFERTA ?</b></font>
+                    <br>
+                    <div>
+                        <a class="waves-effect waves-light btn-small purple lighten-2 yesButton">Sim</a>
+                        <a class="waves-effect waves-light btn-small purple lighten-2  noButton">Não</a>
+                    </div>
+                    <div class="box offerbox">
+                        <br>
+                        <div class="selo">
+                            <font color="Indigo"><b>
+                                    <br>
+                                    <img src="img/beneficio.PNG" height="35px" width="45px">
+                                    <br> OFEREÇA A REDUÇÃO NO VALOR DO PLANO DO CLIENTE PARA TENTAR UMA NEGOCIAÇÃO
+                                    <br>
+                                    DOS DÉBITOS EM ABERTO.
+                                </b></font>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="selo">
+                            <br>
+                            <b>
+                                <font color="purple">VOCÊ TAMBÉM PODE OFERECER BENEFÍCIOS AO CLIENTE COMO:</font>
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• FATURA DIGITAL: </font> "O cliente passa a receber as faturas
+                                mensalmente no e-mail de sua preferência,<br> facilitando o recebimento do boleto em
+                                casos de greve nos correios. Tudo ao alcance de um clique."
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• DACC: </font> "No DACC (débito automático em conta corrente), o
+                                valor é descontado diretamente do banco credenciado do titular,<br>
+                                evitando esquecimentos, e facilitando o pagamento sem que o cliente precise sair de
+                                casa."
+                            </b>
+                            <br>
+                            <br>
+                            <b>
+                                <font color="purple">• TROCA DE VENCIMENTO: </font> "A alteração na data de vencimento
+                                pode ser ofertado ao cliente para facilitar o pagamento, de uma forma que a data de
+                                vencimento da fatura, fique próximo a data de recebimento do cliente, evitando o atraso
+                                no pagamento das faturas."
+                            </b>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <font color="purple"><b>* EM CASOS DE SEM INTERESSE, NÃO SE REGISTRA PROMESSA / ACORDO *</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b> ATUALIZAÇÃO CADASTRAL </b></font>
+                    <br>
+                    <b>"Fora esse telefone qual seria outro para contato?; Possui e-mail?"</b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>QUAL MOTIVO DA INADIMPLÊNCIA?</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b>OCORRÊNCIA COM CLIENTE EM LINHA</b></font>
+                    <br>
+                    <b>Inserir dentro da ocorrência as informações da propostas passada ao cliente incluindo a fatura e
+                        valores.<br>"NOME COM QUEM NEGOCIOU", "DATA PREVISTA PARA PAGAMENTO" e o "MOTIVO" de não poder
+                        negociar nesse atendimento.</b>
+                    <br>
+                    <br>
+                    <p class="selo">
+                        <font color="purple"><b>FRASEOLOGIA FINAL:</b></font><br><br><b>"Consequências: "Senhor como não
+                            ficou agendado nenhuma data para pagamento, vou deixa-lo ciente que juros e multas serão
+                            diários,<br> ligações de cobranças serão constantes, podendo acontecer o bloqueio XX em seus
+                            serviços.​"</b>
+                    </p>
+                    <br>
+                    <font color="purple"><b>Alguma dúvida ?</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b>A Vivo Agradece, tenha um bom dia/boa tarde!</b></font>
+                    <br>
+                    <br>
+                    <img class="imgTotal" src="img/moca1.PNG">
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!-- RETORNO DIRETO -->
+            <div id="op8" class="box" align="center"">
+                <div class=" geral">
+                <font color="purple">
+                    <h5><b>RETORNO DIRETO</b></h5>
+                </font>
+                <br>
+                <b>"Utilizar quando o titular da linha não pode atender no momento e solicita um retorno mais
+                    tarde."</b>
+                <br>
+                <br>
+                <font color="purple"><b>PROCEDIMENTO:</font>
+                <br>
+                "Questionar o melhor horário para retorno e se há algum outro telefone de preferência.
+                <br>
+                Lembre-se de informar o 0800-774-1515 para que o titular possa entrar em contato também.
+                </b>
+                <br>
+                <br>
+                <font color="purple"><b>* EM CASOS DE RETORNO, NÃO SE REGISTRA PROMESSA / ACORDO *</b></font>
+                <br>
+                <br>
+                <font color="purple"><b>OCORRÊNCIA COM CLIENTE EM LINHA</b></font>
+                <br>
+                <b>
+                    Insira dentro da ocorrência, as informações do referentes ao contato obtido.
+                    <br>
+                    (NOME DO TITULAR), HORÁRIO para retorno, e TELEFONE no qual deseja o retorno.
+                </b>
+                <br>
+                <br>
+                <p class="selo">
+                    <br>
+                    <font color="purple"><b>FRASEOLOGIA FINAL:</b></font><br><br><b>"Senhor(a) estarei agendando um
+                        retorno para o número “XXXXX-XXXX” para às “XX” horas." </b>
+                </p>
+                <br>
+                <font color="purple"><b>Alguma dúvida ?</b></font>
+                <br>
+                <br>
+                <font color="purple"><b>A Vivo Agradece, tenha um bom dia/boa tarde!</b></font>
+                <br>
+                <br>
+                <img class="imgTotal" src="img/moca2.PNG">
+                <br>
+                <br>
+            </div>
+        </div>
+        <!-- PROMESSA VIGENTE -->
+        <div id="op9" class="box" align="center" style="display: none;"><b>
+            </b>
+            <div class="geral">
+                <font color="purple">
+                    <h5><b>PROMESSA VIGENTE</b></h5>
+                </font>
+                <br>
+                <b>"Quando o cliente já possui um acordo / promessa ativo no sistema, ou na central da vivo."</b>
+                <br>
+                <br>
+                <font color="purple"><b>NEGOCIAÇÃO: </b></font>
+                <br>
+                <b>"Informe ao cliente, as faturas e os valores em aberto.</b>
+                <br>
+                <br>
+                <p class="selo">
+                    <br>
+                    <font color="purple" size="4px"><b>PROCEDIMENTOS:</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b>EM CASO DE ACORDO ATIVO NO SISTEMA: </b></font>
+                    <br>
+                    <b>"Realize a atualização cadastral, relembrando o cliente a data agendada para pagamento e o
+                        valor a ser pago."</b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>EM CASO DE ACORDO DIRETAMENTE COM A CENTRAL: </b></font>
+                    <br>
+                    <b>Solicite informações como data prevista de pagamento e valor a ser pago (em caso de
+                        parcelamento, questionar a quantidade de parcelas).</b>
+                </p>
+                <!-- botoes ofertas -->
+                <font color="purple"><b>VOCÊ OFERTA ?</b></font>
+                <br>
+                <div>
+                    <a class="waves-effect waves-light btn-small purple lighten-2 yesButton">Sim</a>
+                    <a class="waves-effect waves-light btn-small purple lighten-2  noButton">Não</a>
+                </div>
+                <div class="box offerbox">
+                    <br>
+                    <div class="selo">
+                        <br>
+                        <font color="Indigo"><b> <i class="small material-icons">redeem</i> <br> OFEREÇA A REDUÇÃO NO
+                                VALOR DO PLANO COMO UMA FORMA DE BENEFÍCIO AO CLIENTE
+                                <br>
+                                POR JÁ TER PAGO O DÉBITO EM ABERTO.
+                            </b></font>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="selo">
+                        <br>
+                        <b>
+                            <font color="purple">VOCÊ TAMBÉM PODE OFERECER BENEFÍCIOS AO CLIENTE COMO:</font>
+                        </b>
+                        <br>
+                        <br>
+                        <b>
+                            <font color="purple">• FATURA DIGITAL: </font> "O cliente passa a receber as faturas
+                            mensalmente no e-mail de sua preferência,<br> facilitando o recebimento do boleto em casos
+                            de greve nos correios. Tudo ao alcance de um clique."
+                        </b>
+                        <br>
+                        <br>
+                        <b>
+                            <font color="purple">• DACC: </font> "No DACC (débito automático em conta corrente), o valor
+                            é descontado diretamente do banco credenciado do titular,<br>
+                            evitando esquecimentos, e facilitando o pagamento sem que o cliente precise sair de casa."
+                        </b>
+                        <br>
+                        <br>
+                        <b>
+                            <font color="purple">• TROCA DE VENCIMENTO: </font> "A alteração na data de vencimento pode
+                            ser ofertado ao cliente para facilitar o pagamento, de uma forma que a data de vencimento da
+                            fatura, fique próximo a data de recebimento do cliente, evitando o atraso no pagamento das
+                            faturas."
+                        </b>
+                    </div>
+                </div>
+                <br>
+                <!-- fim ofertas -->
+                <font color="purple"><b>* EM CASOS DE PROMESSA VIGENTE, NÃO SE REGISTRA PROMESSA / ACORDO *</b></font>
+                <br>
+                <br>
+                <font color="purple"><b> ATUALIZAÇÃO CADASTRAL </b></font>
+                <br>
+                <b>"Fora esse telefone qual seria outro para contato?; Possui e-mail?"</b>
+                <br>
+                <br>
+                <font color="purple"><b>OCORRÊNCIA COM CLIENTE EM LINHA</b></font>
+                <br>
+                <b>
+                    Insira dentro da ocorrência, as informações do referentes ao acordo vigente.
+                    <br>
+                    "(NOME COM QUEM NEGOCIOU)" possui um acordo ativo referente a fatura: "XX/XX/XXXX" no valor de R$
+                    "XX".<br>
+                    O acordo consiste em (inserir parcelas e valor de cada parcela).
+                    <br>
+                    Com previsão de pagamento para o dia "XX/XX/XXXX".
+                </b>
+                <br>
+                <br>
+                <p class="selo">
+                    <br>
+                    <font color="purple"><b>FRASEOLOGIA FINAL:</b></font>
+                    <br>
+                    <br>
+                    <b>Senhor (a) registrei no sistema que já existe um acordo vigente em seu nome, lembrando que ele
+                        consiste em
+                        <br>
+                        (repasse as informações cedidas pelo cliente com relação ao acordo realizado com a central)
+                        <br>
+                        É Importante que o pagamento seja efetuado na data agendada para que não ocorra uma QUEBRA DE
+                        ACORDO COM A VIVO.</b>
+                </p>
+                <br>
+                <font color="purple"><b>Alguma dúvida ?</b></font>
+                <br>
+                <br>
+                <font color="purple"><b>A Vivo Agradece, tenha um bom dia/boa tarde!</b></font>
+                <br>
+                <br>
+                <img class="imgTotal" src="img/moca3.PNG">
+                <br>
+                <br>
+            </div>
+        </div>
+        <!-- SUSPEITA DE FRAUDE -->
+        <div id="op10" class="box" align="center" style="display: none;">
+            <div class="geral">
+                <font color="purple">
+                    <h5><b>SUSPEITA DE FRAUDE</b></h5>
+                </font>
+                <br>
+                <b>"Quando o cliente informa que não conhece a dívida, ou não reconhece o produto."</b>
+                <br>
+                <br>
+                <font color="purple"><b>NEGOCIAÇÃO: </b></font>
+                <br>
+                <b>Informe ao cliente, as faturas e os valores em aberto, e a qual linha pertence o débito.</b>
+                <br>
+                <br>
+                <p class="selo">
+                    <br>
+                    <font color="purple" size="4px"><b>PROCEDIMENTOS: </b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b>CASO O CLIENTE DESCONHEÇA O SERVIÇO: </b></font>
+                    <br>
+                    <b>Informe ao cliente a linha do qual ele está sendo cobrado.</b>
+                    <br>
+                    <br>
+                    <font color="purple"><b>CASO O CLIENTE DESCONHEÇA O DÉBITO: </b></font>
+                    <br>
+                    <b>Informe-o sobre o ciclo de faturamento, (menu de opções) questione sobre a possibilidade do
+                        cliente ter feito o pagamento da fatura errada,
+                        <br>
+                        se atente também a possibilidade da fatura em questão se tratar de um parcelamento, e não da
+                        fatura mensal.</b>
+
+                    <br>
+                    <br>
+                    <font color="purple"><b>●</b></font>
+                    <b>"Situações que demandam maiores esclarecimentos, devem ser encaminhadas à central da vivo no
+                        10315."</b>
+                </p>
+                <br>
+                <font color="purple"><b>* EM CASOS DE SUSPEITA DE FRAUDE, NÃO SE REGISTRA PROMESSA / ACORDO *</b></font>
+                <br>
+                <br>
+                <font color="purple"><b> ATUALIZAÇÃO CADASTRAL </b></font>
+                <br>
+                <b>"Fora esse telefone qual seria outro para contato?; Possui e-mail?"</b>
+                <br>
+                <br>
+                <font color="purple"><b>OCORRÊNCIA COM CLIENTE EM LINHA</b></font>
+                <br>
+                <b>
+                    Insira dentro da ocorrência, as informações referentes a suspeita de fraude, como o nome da pessoa
+                    com ao qual falou, a qual linha se referia a chamada,
+                    <br>
+                    os valores e datas em aberto, e todos os detalhes repassados pelo cliente durante a chamada. <br>
+                    Quanto mais completa estiver a ocorrência, melhor!
+                </b>
+                <br>
+                <br>
+                <p class="selo">
+                    <br>
+                    <font color="purple"><b>FRASEOLOGIA FINAL:</b></font>
+                    <br>
+                    <br>
+                    <b>
+                        "Senhor(a) registrei no sistema a suspeita de fraude que o senhor alega que há em seu nome, <br>
+                        lembrando que ele consiste em (repasse as informações referentes ao serviço cobrado).
+                        <br>Peço que o senhor entre em contato diretamente com a central da Vivo no 10315 para maiores
+                        esclarecimentos.</b>
+                </p>
+                <br>
+                <font color="purple"><b>Alguma dúvida ?</b></font>
+                <br>
+                <br>
+                <font color="purple"><b>A Vivo Agradece, tenha um bom dia/boa tarde!</b></font>
+                <br>
+                <br>
+                <img class="imgTotal" src="img/moca3.PNG">
+                <br>
+                <br>
+            </div>
+        </div>
+        <!-- DESCONHECE O DÉBITO -->
+        <div id="op11" class="box" align="center" style="display: none;">
+            <div class="geral">
+                <font color="purple">
+                    <h5><b>DESCONHECE O DÉBITO</b></h5>
+                </font>
+                <br>
+                <b>"Quando o cliente desconhece os valores cobrados na fatura."</b>
+                <br>
+                <br>
+                <font color="purple"><b>NEGOCIAÇÃO: </b></font>
+                <br>
+                <b>Informe ao cliente, as faturas e os valores em aberto.</b>
+                <br>
+                <br>
+                <p class="selo">
+                    <br>
+                    <font color="purple" size="3px"><b>PROCEDIMENTOS: </b></font>
+                    <br>
+                    <b>
+                        Informe-o sobre os possíveis motivos de ter ocorrido uma fatura naquele mês com aquele valor,
+                        como o ciclo de faturamento (menu de opções), alteração na data de vencimento, fatura referente
+                        a parcelamento.
+                        <br>
+                        Recomende que o cliente verifique o boleto, caso o questionamento permaneça, encaminhe o cliente
+                        a central para maiores esclarecimentos.
+                    </b>
+                </p>
+                <br>
+                <font color="purple"><b>* EM CASOS DE DESCONHECIMENTO DE DÉBITO, NÃO SE REGISTRA PROMESSA / ACORDO,
+                        ENCAMINHA-SE O CLIENTE PARA A CENTRAL NO 103 15 *</b></font>
+                <br>
+                <br>
+                <font color="purple"><b> ATUALIZAÇÃO CADASTRAL </b></font>
+                <br>
+                <b>"Fora esse telefone qual seria outro para contato?; Possui e-mail?"</b>
+                <br>
+                <br>
+                <font color="purple"><b>OCORRÊNCIA COM CLIENTE EM LINHA</b></font>
+                <br>
+                <b>
+                    Insira dentro da ocorrência, as informações referentes a chamada, como o nome da pessoa com ao qual
+                    falou, a qual linha se referia a chamada,
+                    <br>
+                    os valores e datas em aberto, e todos os detalhes repassados pelo cliente durante a chamada. <br>
+                    Quanto mais completa estiver a ocorrência, melhor!
+                </b>
+                <br>
+                <br>
+                <p class="selo">
+                    <br>
+                    <font color="purple"><b>FRASEOLOGIA FINAL:</b></font>
+                    <br>
+                    <br>
+                    <b>
+                        "Senhor(a) registrei no sistema que o senhor(a) desconhece o débito referente aos serviços
+                        cobrados. <br> Lembrando que ele consiste em (repasse as informações referentes ao serviço
+                        cobrado).
+                        <br>
+                        Peço que o senhor entre em contato diretamente com a central da Vivo no 10315 para maiores
+                        esclarecimentos.</b>
+                </p>
+                <br>
+                <font color="purple"><b>Alguma dúvida ?</b></font>
+                <br>
+                <br>
+                <font color="purple"><b>A Vivo Agradece, tenha um bom dia/boa tarde!</b></font>
+                <br>
+                <br>
+                <img class="imgTotal" src="img/moca1.PNG">
+                <br>
+                <br>
+            </div>
+        </div>
+        <!-- CONTESTAÇÃO DE DIVIDA -->
+        <div id="op12" class="box" align="center" style="display: none;">
+            <div class="geral">
+                <font color="purple">
+                    <h5><b>CONTESTAÇÃO DE DÍVIDA</b></h5>
+                </font>
+                <br>
+                <b>"Quando o cliente desconhece os valores cobrados na fatura."</b>
+                <br>
+                <br>
+                <font color="purple"><b>NEGOCIAÇÃO: </b></font>
+                <br>
+                <b>Informe ao cliente, as faturas e os valores em aberto.</b>
+                <br>
+                <br>
+                <p class="selo">
+                    <br>
+                    <font color="purple" size="3px"><b>PROCEDIMENTOS: </b></font>
+                    <br>
+                    <b>
+                        Informe-o sobre os possíveis motivos de ter ocorrido uma diferença nos valores da fatura, como o
+                        ciclo de faturamento (menu de opções), possíveis juros e multas de faturas anteriores, recomende
+                        que o cliente verifique o boleto para também sobre a possibilidade de ter expirado o período de
+                        desconto no plano, verifique se a fatura em questão não se trata de uma quebra de parcelamento,
+                        e não da fatura mensal.
+                    </b>
+                </p>
+                <br>
+                <font color="purple"><b>* EM CASOS DE CONTESTAÇÃO, NÃO SE REGISTRA PROMESSA / ACORDO *</b></font>
+                <br>
+                <br>
+                <font color="purple"><b>QUAL MOTIVO DA INADIMPLÊNCIA?</b></font>
+                <br>
+                <br>
+                <font color="purple"><b> ATUALIZAÇÃO CADASTRAL </b></font>
+                <br>
+                <b>"Fora esse telefone qual seria outro para contato?; Possui e-mail?"</b>
+                <br>
+                <br>
+                <font color="purple"><b>OCORRÊNCIA COM CLIENTE EM LINHA</b></font>
+                <br>
+                <b>
+                    Insira dentro da ocorrência, as informações referentes a contestação, como o nome da pessoa com ao
+                    qual falou, a qual linha se referia a chamada,
+                    <br>
+                    os valores e datas em aberto, e todos os detalhes repassados pelo cliente durante a chamada. <br>
+                    Quanto mais completa estiver a ocorrência, melhor!
+                </b>
+                <br>
+                <br>
+                <p class="selo">
+                    <br>
+                    <font color="purple"><b>FRASEOLOGIA FINAL:</b></font>
+                    <br>
+                    <br>
+                    <b>
+                        "Senhor (a) registrei no sistema a contestação referentes aos seus serviços. <br> Lembrando que
+                        ele consiste em (repasse as informações referentes ao serviço cobrado).
+                        <br>
+                        Peço que o senhor entre em contato diretamente com a central da Vivo no 10315 para maiores
+                        esclarecimentos.</b>
+                </p>
+                <br>
+                <font color="purple"><b>Alguma dúvida ?</b></font>
+                <br>
+                <br>
+                <font color="purple"><b>A Vivo Agradece, tenha um bom dia/boa tarde!</b></font>
+                <br>
+                <br>
+                <img class="imgTotal" src="img/sorrisorapaz.PNG">
+                <br>
+                <br>
+            </div>
+        </div>
+        <!-- ALEGA PAGAMENTO -->
+        <div id="op13" class="box" align="center" style="display: none;">
+            <div class="geral">
+                <font color="purple">
+                    <h5><b>ALEGA PAGAMENTO</b></h5>
+                </font>
+                <br>
+                <b>"Quando o cliente alega ter efetuado o pagamento da fatura que está em aberto."</b>
+                <br>
+                <br>
+                <font color="purple"><b>ARGUMENTAÇÃO: </b></font>
+                <br>
+                <b>Informe faturas e valores em aberto, caso o cliente já tenha efetuado o pagamento, questione data,
+                    local onde foi efetuado o pagamento e se o cliente tinha possuía o boleto em mãos.</b>
+                <br>
+                <br>
+                <!-- botoes ofertas -->
+                <font color="purple"><b>VOCÊ OFERTA ?</b></font>
+                <br>
+                <div>
+                    <a class="waves-effect waves-light btn-small purple lighten-2 yesButton">Sim</a>
+                    <a class="waves-effect waves-light btn-small purple lighten-2  noButton">Não</a>
+                </div>
+                <div class="box offerbox">
+                    <br>
+                    <div class="selo">
+                        <br>
+                        <font color="Indigo"><b> <i class="small material-icons">redeem</i> <br> OFEREÇA A REDUÇÃO NO
+                                VALOR DO PLANO COMO UMA FORMA DE BENEFÍCIO AO CLIENTE
+                                <br>
+                                POR JÁ TER PAGO O DÉBITO EM ABERTO.
+                            </b></font>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="selo">
+                        <br>
+                        <b>
+                            <font color="purple">VOCÊ TAMBÉM PODE OFERECER BENEFÍCIOS AO CLIENTE COMO:</font>
+                        </b>
+                        <br>
+                        <br>
+                        <b>
+                            <font color="purple">• FATURA DIGITAL: </font> "O cliente passa a receber as faturas
+                            mensalmente no e-mail de sua preferência,<br> facilitando o recebimento do boleto em casos
+                            de greve nos correios. Tudo ao alcance de um clique."
+                        </b>
+                        <br>
+                        <br>
+                        <b>
+                            <font color="purple">• DACC: </font> "No DACC (débito automático em conta corrente), o valor
+                            é descontado diretamente do banco credenciado do titular,<br>
+                            evitando esquecimentos, e facilitando o pagamento sem que o cliente precise sair de casa."
+                        </b>
+                        <br>
+                        <br>
+                        <b>
+                            <font color="purple">• TROCA DE VENCIMENTO: </font> "A alteração na data de vencimento pode
+                            ser ofertado ao cliente para facilitar o pagamento, de uma forma que a data de vencimento da
+                            fatura, fique próximo a data de recebimento do cliente, evitando o atraso no pagamento das
+                            faturas."
+                        </b>
+                    </div>
+                </div>
+                <br>
+                <font color="purple"><b>* EM CASOS DE ALEGA PAGAMENTO, NÃO SE REGISTRA PROMESSA / ACORDO *</b></font>
+                <br>
+                <br>
+                <font color="purple"><b>QUAL MOTIVO DO PAGAMENTO EM ATRASO?</b></font>
+                <br>
+                <b>"Pergunte ao cliente por qual motivo o pagamento não foi efetuado dentro do prazo de vencimento."</b>
+                <br>
+                <br>
+                <font color="purple"><b> ATUALIZAÇÃO CADASTRAL </b></font>
+                <br>
+                <b>"Fora esse telefone qual seria outro para contato?; Possui e-mail?"</b>
+                <br>
+                <br>
+                <font color="purple"><b>OCORRÊNCIA COM CLIENTE EM LINHA</b></font>
+                <br>
+                <b>
+                    Insira dentro da ocorrência as informações referentes ao pagamento efetuado pelo cliente, incluindo
+                    a fatura e os valores que estavam em aberto, foi efetuado o pagamento da fatura.
+                    <br>
+                    Lembre de inserir "com quem falou" na chamada.
+                </b>
+                <br>
+                <br>
+                <p class="selo">
+                    <br>
+                    <font color="purple"><b>FRASEOLOGIA FINAL:</b></font>
+                    <br>
+                    <br>
+                    <b>
+                        "Senhor (a), ficou registrado que o pagamento da fatura que venceu dia "XX/XX" no valor total de
+                        "XX", foi efetuado no dia "XX/XX" através "XX" (casa lotérica, banco, app banco)
+                        <br>
+                        É importante que o pagamento das próximas faturas permaneçam dentro do prazo de vencimento, para
+                        que não ocorram novos juros a fatura, bloqueios em sua linha ou mais ligações de cobranças."
+                    </b>
+                </p>
+                <br>
+                <font color="purple"><b>Alguma dúvida ?</b></font>
+                <br>
+                <br>
+                <font color="purple"><b>A Vivo Agradece, tenha um bom dia/boa tarde!</b></font>
+                <br>
+                <br>
+                <img class="imgTotal" src="img/moca4.PNG">
+                <br>
+                <br>
+            </div>
+        </div>
+        <!-- RECADO -->
+        <div id="op14" class="box" align="center" style="display: none;">
+            <div class="geral">
+                <font color="purple">
+                    <h5><b>RECADO</b></h5>
+                </font>
+                <br>
+                <b>"Quando o titular da linha não se encontra e um terceiro se responsabiliza por anotar o recado e
+                    repassar ao titular ou responsável."</b>
+                <br>
+                <br>
+                <p class="selo">
+                    <br>
+                    <font color="purple" size="3px"><b>PROCEDIMENTO: </b></font>
+                    <br>
+                    <b>
+                        "Solicitar o "nome e o grau de parentesco do terceiro".
+                        <br>
+                        Lembre-se de informar o 0800-774-15-15 para que o titular possa entrar em contato também.
+                    </b>
+                </p>
+                <br>
+                <font color="purple"><b>* EM CASOS DE RECADO, NÃO GRAVA-SE PROMESSA/ACORDO NO SISTEMA *</b></font>
+                <br>
+                <br>
+                <font color="purple"><b> ATUALIZAÇÃO CADASTRAL </b></font>
+                <br>
+                <b>"Fora esse telefone qual seria outro para contato?; Possui e-mail?"</b>
+                <br>
+                <br>
+                <font color="purple"><b>OCORRÊNCIA COM CLIENTE EM LINHA</b></font>
+                <br>
+                <b>
+                    Insira dentro da ocorrência, as informações referentes ao contato obtido.
+                    <br>
+                    "Nome de quem atendeu”, telefone com o qual foi entrado em contato, e se a pessoa anotou o 0800.
+                </b>
+                <br>
+                <br>
+                <p class="selo">
+                    <br>
+                    <font color="purple"><b>FRASEOLOGIA FINAL:</b></font>
+                    <br>
+                    <br>
+                    <b>
+                        Senhor(a) anote por gentileza o número da central de atendimento para que o Senhor(a) (nome do
+                        titular) possa entrar em contato conosco.
+                        <br>
+                        O número é 0800-774-15-15.
+                        <br>
+                        O horário de atendimento é de segunda a sábado, das 8hrs às 22hrs, exceto domingos e feriados.
+                    </b>
+                </p><b>
+                    <br>
+                    <font color="purple"><b>Alguma dúvida ?</b></font>
+                    <br>
+                    <br>
+                    <font color="purple"><b>A Vivo Agradece, tenha um bom dia/boa tarde!</b></font>
+                    <br>
+                    <br>
+                    <img class="imgTotal" src="img/sorrisorapaz1.PNG">
+                    <br>
+                    <br>
+                </b>
+            </div><b>
+            </b>
+        </div>
+        <!-- SECRETARIA ELETRONICA/CAIXA POSTAL  -->
+        <div id="op15" class="box" align="center"">
+            <div class=" geral">
+            <font color="purple">
+                <h5><b>SECRETARIA ELETRONICA/CAIXA POSTAL</b></h5>
+            </font>
+            <br>
+            <b>"Quando não há contato direto com cliente devido a secretária eletrônica ou a caixa postal."</b>
+            <br>
+            <br>
+            <p class="selo">
+                <br>
+                <font color="purple" size="3px"><b>PROCEDIMENTO: </b></font>
+                <br>
+                <b>
+                    "Aguarde 10 segundos para encerrar a chamada, utilizando a fraseologia "Por falta de comunicação
+                    encerro a ligação."
+                </b>
+            </p>
+            <br>
+            <font color="purple"><b>* EM CASOS DE CAIXA POSTAL / SECRETÁRIA ELETRÔNICA, NÃO GRAVA-SE PROMESSA/ACORDO NO
+                    SISTEMA *</b></font>
+            <br>
+            <br>
+            <font color="purple"><b>OCORRÊNCIA:</b></font>
+            <br>
+            <b>
+                <font color="purple">Exemplo:</font>"Ligação encerrada devido a caixa postal / secretária eletrônica".
+            </b>
+            <br>
+            <br>
+            <br>
+            <br>
+            </b>
+        </div><b>
+        </b>
+    </div>
+    <!-- LIGACAO PERDIDA -->
+    <div id="op16" class="box" align="center"">
+                        <div class=" geral">
+        <font color="purple">
+            <h5><b>LIGAÇÃO PERDIDA</b></h5>
+        </font>
+        <br>
+        <b>QUANDO HÁ DIFICULDADES NO ATENDIMENTO CAUSADOS POR:</b>
+        <br>
+        <br>
+        <font color="purple"><b>• LIGAÇÃO RUIM (barulho ao fundo, chiado).</b></font>
+        <br>
+        <font color="purple"><b>• CRIANÇA NA LINHA.</b></font>
+        <br>
+        <font color="purple"><b>• CLIENTE SE NEGA A INFORMAR PID.</b></font>
+        <p class="selo">
+            <br>
+            <font color="purple" size="3px"><b>PROCEDIMENTO: </b></font>
+            <br>
+            <b>
+                Insira na ocorrência o motivo pelo qual a ligação foi perdida.
+                <br>
+                "Maria se nega a informar PID" ou "Antônio encerrou ao chamada após saber que se tratava da vivo."
+            </b>
+        </p>
+        <br>
+        <br>
+        </b>
+    </div><b>
+    </b>
+    </div>
+    <!-- LIGACAO CAIU  -->
+    <div id="op17" class="box" align="center"">
+                        <div class=" geral">
+        <font color="purple">
+            <h5><b>LIGAÇÃO CAIU</b></h5>
+        </font>
+        <br>
+        <b>"Quando a chamada é interrompida no inicio do atendimento, ou se encerra sozinha antes dos 7 segundos."</b>
+        <br>
+        <br>
+        <p class="selo">
+            <br>
+            <font color="purple" size="3px"><b>PROCEDIMENTO: </b></font>
+            <br>
+            <b>
+                "Insira na ocorrência que a ligação caiu durante a chamada, ou antes de conseguir contato com o
+                cliente."
+            </b>
+        </p>
+        <br>
+        <br>
+        </b>
+    </div><b>
+    </b>
+    </div>
+    <!-- RETORNO AGENDADO INDIRETO -->
+    <div id="op18" class="box" align="center" style="display: none;">
+        <div class="geral">
+            <font color="purple">
+                <h5><b>RETORNO AGENDADO INDIRETO</b></h5>
+            </font>
+            <br>
+            <b>
+                "Quando o titular da linha não se encontra e o contato é com um terceiro."
+            </b>
+            <br>
+            <br>
+            <p class="selo">
+                <br>
+                <font color="purple" size="3px"><b>PROCEDIMENTO: </b></font>
+                <br>
+                <b>
+                    Solicitar o "nome e o grau de parentesco do terceiro, questionando o melhor horário para retorno e
+                    se há algum outro telefone de preferência.
+                    <br>
+                    Lembre-se de informar o 0800-774-15-15 para que o titular possa entrar em contato também.
+                </b>
+            </p>
+            <br>
+            <font color="purple"><b>* EM CASOS DE RETORNO, NÃO GRAVA-SE PROMESSA/ACORDO NO SISTEMA *</b></font>
+            <br>
+            <br>
+            <font color="purple"><b> ATUALIZAÇÃO CADASTRAL </b></font>
+            <br>
+            <b>"Fora esse telefone qual seria outro para contato?; Possui e-mail?"</b>
+            <br>
+            <br>
+            <font color="purple"><b>OCORRÊNCIA COM CLIENTE EM LINHA</b></font>
+            <br>
+            <b>
+                Insira dentro da ocorrência, as informações referente ao contato obtido.
+                <br>
+                "NOME DE QUEM ATENDEU", "HORÁRIO PARA RETORNO", se a pessoa anotou ou não o 0800, e qual telefone deseja
+                o retorno.
+            </b>
+            <br>
+            <br>
+            <p class="selo">
+                <br>
+                <font color="purple"><b>FRASEOLOGIA FINAL:</b></font>
+                <br>
+                <br>
+                <b>
+                    Senhor(a) anote por gentileza o número da central de atendimento para que o Senhor(a) (nome do
+                    titular) possa entrar em contato conosco.
+                    <br>
+                    O número é 0800-774-15-15.
+                    <br>
+                    O horário de atendimento é de segunda a sábado, das 8hrs às 22hrs, exceto domingos e feriados.
+                </b>
+            </p><b>
+                <br>
+                <font color="purple"><b>Alguma dúvida ?</b></font>
+                <br>
+                <br>
+                <font color="purple"><b>A Vivo Agradece, tenha um bom dia/boa tarde!</b></font>
+                <br>
+                <br>
+                <img class="imgTotal" src="img/sorrisorapaz5.PNG">
+                <br>
+                <br>
+            </b>
+        </div>
+        <b>
+        </b>
+    </div>
+    </div>
+    <!-- fim  -->
+    </div>
+    <!-- div OP oferta  -->
+    <div id="guia-2">
+        <ul class="collapsible">
+            <!-- Procedimentos -->
+            <li>
+                <div class="collapsible-header">
+                    <img src="img/procedimentosnew.PNG" width="60px" height="65px" class="coll-logo">
+                    <b class="coll-name">PROCEDIMENTOS</b>
+                </div>
+                <div class="collapsible-body">
+                    <!-- verificação -->
+                    <div class="boxOffer">
+                        <div class="box-Logo">
+                            <img src="img/verificacao.PNG" width="75px" height="65px">
+                        </div>
+                        <div class="boxHead">
+                            <div class="boxText"><b>VERIFICAÇÃO</b></div>
+                            <a class="waves-effect waves-light btn modal-trigger purple" href="#modal1">ABRIR</a>
+                        </div>
+                        <div id="modal1" class="modal" align="center">
+                            <div class="modal-content">
+                                <p>
+                                    <font size="4px" color="purple">
+                                        <b>
+                                            VERIFIQUE A ÚLTIMA DATA DE MODIFICAÇÃO NO PLANO DO CLIENTE,
+                                            <br>
+                                            INSERINDO O CPF NO SIEBEL.
+                                        </b>
+                                    </font>
+                                </p>
+                                <br>
+                                <font size="3px">
+                                    <b>SIGA OS EXEMPLOS ABAIXO:</b>
+                                </font>
+                                <br>
+                                <br>
+                                <img src="img/procedimentos/inicialSiebel.PNG">
+                                <br>
+                                <br>
+                                <p class="modal-ex">
+                                    <font size="3px" color="purple">
+                                        <b>
+                                            LEMBRE-SE QUE PARA OFERTAR AO CLIENTE UM NOVO DESCONTO,
+                                            <br>
+                                            O PLANO NÃO PODE TER SIDO ADEQUADO NOS ÚLTIMOS 3 MESES.
+                                        </b>
+                                    </font>
+                                </p>
+                                <br>
+                                <br>
+                                <img src="img/procedimentos/mudançaOffer1.PNG">
+                                <br>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- consulta -->
+                    <div class="boxOffer">
+                        <div class="box-Logo">
+                            <img src="img/consultanew.PNG" width="75px" height="65px">
+                        </div>
+                        <div class="boxHead">
+                            <div class="boxText"><b>CONSULTA</b></div>
+                            <a class="waves-effect waves-light btn modal-trigger purple" href="#modal2">ABRIR</a>
+                        </div>
+                        <div id="modal2" class="modal" align="center">
+                            <div class="modal-content">
+                                <p>
+                                    <font size="4px" color="purple">
+                                        <b>
+                                            O PLANO PODE SER ADEQUADO ?
+                                            <br>
+                                            ENTÃO INSIRA O CPF NO GPS.
+                                    </font>
+                                    </b>
+                                </p>
+                                <br>
+                                <font size="3px">
+                                    <b>SIGA OS EXEMPLOS ABAIXO:</b>
+                                </font>
+                                <br>
+                                <div class="modal-img">
+                                    <img src="img/procedimentos/gpsCPF.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px" color="purple">
+                                            <b>
+                                                UMA FICHA DE ATUALIZAÇÃO CADASTRAL IRÁ APARECER EM SUA TELA,
+                                                <br>
+                                                CONFIRME OS DADOS COM O CLIENTE.
+                                                <br>
+                                                (LEMBRE-SE QUE TAMBÉM É NECESSÁRIO FAZER A ATUALIZAÇÃO CADASTRAL NO
+                                                NÉCTAR / ZAAP)
+                                            </b>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <img src="img/procedimentos/atualizacaoGPS.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px" color="purple">
+                                            <b>
+                                                APÓS TER COMPLETADO A ATUALIZAÇÃO CADASTRAL PELO GPS,
+                                                <br>
+                                                VOCÊ VAI ENTRAR NAS INFORMAÇÕES DO CLIENTE ONDE IRÁ,
+                                                <br>
+                                                SELECIONAR "FATURA" PARA TER ACESSO AS FATURAS DO CLIENTE.
+                                            </b>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <img src="img/procedimentos/fatura.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px" color="purple">
+                                            <b>
+                                                AQUI VOCE CONSEGUIRÁ VER AS FATURAS DO CLIENTE, E TAMBÉM FAZER
+                                                "DOWNLOAD".
+                                                <br>
+                                                (LEMBRE-SE VOCÊ CONSEGUE VERIFICAR NESSA GUIA MESMO,
+                                                <br>
+                                                SE FOI FEITO O PAGAMENTO DE FATURAS EM ABERTO)
+                                            </b>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <img src="img/procedimentos/faturas2.PNG">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- analise -->
+                    <div class="boxOffer">
+                        <div class="box-Logo">
+                            <img src="img/analisenew.PNG" width="75px" height="65px">
+                        </div>
+                        <div class="boxHead">
+                            <div class="boxText"><b>ANÁLISE</b></div>
+                            <a class="waves-effect waves-light btn modal-trigger purple" href="#modal3">ABRIR</a>
+                        </div>
+                        <div id="modal3" class="modal" align="center">
+                            <div class="modal-content">
+                                <p>
+                                    <font size="4px" color="purple">
+                                        <b>
+                                            ANALISE O PLANO QUE O CLIENTE POSSUI COM ATENÇÃO.
+                                        </b>
+                                    </font>
+                                </p>
+                                <br>
+                                <font size="3px">
+                                    <b>SIGA OS EXEMPLOS ABAIXO:</b>
+                                </font>
+                                <br>
+                                <div class="modal-img">
+                                    <br>
+                                    <br>
+                                    <img src="img/procedimentos/detalhamento1.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px">
+                                            <b>
+                                                <font color="purple">EM CASOS DE TV</font>, EM QUE HOUVER <font
+                                                    color="purple">PONTO ADICIONAL</font>,
+                                                <br>
+                                                O VALOR DEVE SER <font color="purple">SOMADO E INSERIDO NO SIMULADOR
+                                                </font>.
+                                            </b>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <img src="img/procedimentos/detalhamento2.PNG">
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- simulaçao -->
+                    <div class="boxOffer">
+                        <div class="box-Logo">
+                            <img src="img/simulacaonew.PNG" width="85px" height="75px">
+                        </div>
+                        <div class="boxHead">
+                            <div class="boxText"><b>SIMULAÇÃO</b></div>
+                            <a class="waves-effect waves-light btn modal-trigger purple" href="#modal4">ABRIR</a>
+                        </div>
+                        <div id="modal4" class="modal" align="center">
+                            <div class="modal-content">
+                                <br>
+                                <p>
+                                    <font size="4px" color="purple">
+                                        <b>
+                                            MANTENHA O CLIENTE NA LINHA E UTILIZE O SIMULADOR PARA VERIFICAR O DESCONTO
+                                            NO PLANO DO CLIENTE.
+                                            <br>
+                                            <br>
+                                            <p class="modal-ex">
+                                                <font size="3px" color="purple">
+                                                    <b>
+                                                        LEMBRE-SE QUE A ORDEM IMPORTA, ENTÃO, PARA PREENCHER O
+                                                        SIMULADOR, MANTENHA A SEQUÊNCIA A SEGUIR.
+                                                        <br>
+                                                        NOME - CPF - MODALIDADE - ESTADO - FEZ ADEQUAÇÃO
+                                                    </b>
+                                                </font>
+                                            </p>
+                                        </b>
+                                    </font>
+                                </p>
+                                <br>
+                                <font size="3px">
+                                    <b>SIGA OS EXEMPLOS ABAIXO:</b>
+                                </font>
+                                <br>
+                                <br>
+                                <div class="modal-img">
+                                    <br>
+                                    <img src="img/procedimentos/simuladorSequencia.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px" color="purple">
+                                            <b>
+                                                EDITE O CONSUMO DE ACORDO COM O PLANO DO CLIENTE,
+                                                <br>
+                                                LEMBRE-SE QUE O DESCONTO É DADO NA LINHA TELEFÔNICA,
+                                                <br>
+                                                ENTÃO OS MINUTOS PARA PLANO DE VOZ SERÁ SEMPRE DE 150.
+                                            </b>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <img src="img/procedimentos/consumoSimulador.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px" color="purple">
+                                            <b>
+                                                NO SIMULADOR, VOCÊ ENCONTRA UM SCRIPT RESUMIDO DO PLANO DO CLINTE,
+                                                <br<>
+                                                    ELE VAI TE AJUDAR A PASSAR AS INFORMAÇÕES REFERENTES AO PLANO DE UMA
+                                                    MANEIRA MAIS CLARA.
+                                            </b>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <img src="img/procedimentoS/simuladorTeste.PNG">
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- argumentação -->
+                    <div class="boxOffer">
+                        <div class="box-Logo">
+                            <img src="img/comunicationnew.PNG" width="75px" height="65px">
+                        </div>
+                        <div class="boxHead">
+                            <div class="boxText"><b>ARGUMENTAÇÃO</b></div>
+                            <a class="waves-effect waves-light btn modal-trigger purple" href="#modal5">ABRIR</a>
+                        </div>
+                        <div id="modal5" class="modal" align="center">
+                            <div class="modal-content">
+                                <br>
+                                <p class="modal-ex">
+                                    <br>
+                                    <font size="4px">
+                                        <b>
+                                            ARGUMENTAÇÃO
+                                        </b>
+                                    </font>
+                                    <br>
+                                    <br>
+                                    <img src="img/argumentacaonew.PNG" width="100px" height="100px">
+                                    <br>
+                                    <br>
+                                    <font size="3px" color="purple">
+                                        <b>
+                                            UTILIZE UMA ARGUMENTAÇÃO CERTEIRA PARA ATRAIR O CLIENTE,
+                                            <br>
+                                            MOSTRE QUE O DESCONTO QUE ELE ESTÁ ADQUIRINDO NESTA CHAMADA É UM BENEFÍCIO.
+                                            <br>
+                                            ENFATIZE AS VANTAGENS LIBERADAS EM SEU PLANO DE VOZ,
+                                            <br>
+                                            COMO O FATO DE QUE LIGAÇÕES PARA CELULARES DA VIVO SÃO LIBERADAS DE MANEIRA
+                                            ILIMITADA.
+                                        </b>
+                                    </font>
+                                    <br>
+                                    <br>
+                                </p>
+                                <br>
+                                <br>
+                                <p class="modal-ex">
+                                    <font size="3px" color="purple">
+                                        <br>
+                                        <img src="img/lembrete.PNG" width="100px" height="100px">
+                                        <br>
+                                        <br>
+                                        <b>
+                                            LEMBRE-SE DE INFORMAR AO CLIENTE, QUE EM 10 DIAS,
+                                            <br>
+                                            UM SMS DE CONFIRMAÇAO SERÁ ENVIADO EM SEU CELULAR,
+                                            <br>
+                                            E EM SEU EMAIL SERÁ ENCAMINHADO UM BREVE RESUMO REFERENTE AO PLANO ADEQUADO.
+                                        </b>
+                                        <br>
+                                        <br>
+                                    </font>
+                                </p>
+                                <br>
+                                <br>
+                                <p class="modal-ex">
+                                    <br>
+                                    <font size="4px">
+                                        <b>
+                                            J-RECUSA
+                                        </b>
+                                    </font>
+                                    <br>
+                                    <br>
+                                    <font size="3px" color="purple">
+                                        <img src="img/jrecusa.PNG" width="100px" height="100px">
+                                        <br>
+                                        <br>
+                                        <b>
+                                            EM TODA CHAMADA NO QUAL HOUVER POSSIBILIDADE, DEVE SER FEITO A OFERTA AO
+                                            CLIENTE.
+                                            <br>
+                                            PORÉM HAVERÃO CASOS EM QUE NÃO SERÁ POSSIVEL ADEQUAR O PLANO.
+                                            <br>
+                                            NESTE CASO, SELECIONA-SE A OPÇÃO <u>"RECUSA PLANO"</u>
+                                            <br>
+                                            <br>
+                                            NELA, VOCÊ DEVE INSERIR O MOTIVO PELO QUAL NÃO FOI POSSÍVEL OFERTAR PARA
+                                            AQUELE CLIENTE,
+                                            <br>
+                                            SEJA POR QUE O CLIENTE RECUSOU A OFERTA, SEJA POR NÃO QUERER FIDELIDADE,
+                                            <br>
+                                            OU POR ESTAR MAIS INTERESSADO NA CONCORRÊNCIA,
+                                            <br>
+                                            OU SIMPLESMENTE PORQUE O PLANO DELE NÃO PODE SER ADEQUADO.
+                                        </b>
+                                        <br>
+                                    </font>
+                                    <br>
+                                    <br>
+                                    <font size="3px">
+                                        <b>
+                                            EXEMPLOS DE J-RECUSA:
+                                        </b>
+                                    </font>
+                                    <br>
+                                    <br>
+                                    <font size="3px" color="purple">
+                                        <b>
+                                            NESSE CASO O CLIENTE NÃO POSSUI PLANO DE VOZ,
+                                            <br>
+                                            E ESTE É UM REQUISITO BÁSICO PARA SE OFERTAR.
+                                        </b>
+                                    </font>
+                                    <br>
+                                    <br>
+                                    <img src="img/procedimentos/jnaopossuiplano.PNG">
+                                    <br>
+                                    <br>
+                                    <font size="3px" color="purple">
+                                        <b>
+                                            PODE VIR A ACONTECER, DO CLIENTE TER UM PLANO DIFERENCIADO.
+                                            <br>
+                                            EM CASOS NO QUAL A ADEQUAÇÃO NÃO COMPENSA, NÃO SE PODE OFERTAR.
+                                        </b>
+                                    </font>
+                                    <br>
+                                    <br>
+                                    <img src="img/procedimentos/jpossuidesc.PNG">
+                                    <br>
+                                    <br>
+                                    <font size="3px" color="purple">
+                                        <b>
+                                            NESSE CASO, O PLANO DO CLIENTE FOI ADEQUADO EM MENOS DE 3 MESES,
+                                            <br>
+                                            E NÃO SE PODE OFERTAR EM CASOS COMO ESTE.
+                                        </b>
+                                    </font>
+                                    <br>
+                                    <br>
+                                    <img src="img/procedimentos/jmeses.PNG">
+                                    <br>
+                                    <br>
+                                    <font size="3px">
+                                        <b>
+                                            LEMBRE-SE QUE INDEPENDENTE DE SER J-RECUSA OU NÃO,
+                                            <br>
+                                            OS BENEFÍCIOS DEVEM SER OFERTADOS.
+                                        </b>
+                                    </font>
+                                    <br>
+                                    <br>
+                                </p>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- Argumentação-->
+            <li>
+                <div class="collapsible-header">
+                    <img src="img/feito.PNG" width="55px" height="55px" class="coll-logo">
+                    <b class="coll-name">ARGUMENTAÇÃO</b>
+                </div>
+                <div class="collapsible-body">
+                    <div class="boxOffer">
+                        <div class="box-Logo">
+                            <img src="img/argumentacaonew.PNG" width="75px" height="65px">
+                        </div>
+                        <div class="boxHead">
+                            <div class="boxText"><b>ARGUMENTOS</b></div>
+                            <a class="waves-effect waves-light btn modal-trigger purple" href="#modal6">ABRIR</a>
+                        </div>
+                        <div id="modal6" class="modal" align="center">
+                            <div class="modal-content">
+                                <font size="4px" color="purple">
+                                    <b>
+                                        ARGUMENTAÇÃO PARA OFERTA
+                                    </b>
+                                </font>
+                                <br>
+                                <br>
+                                <font size="3px">
+                                    <b>
+                                        A OFERTA DEVE SER VISTA PELO CLIENTE COMO UM BENEFÍCIO,
+                                        PARA QUE ELE PERMANEÇA SENDO UM CLIENTE DA VIVO.
+                                        <br>
+                                        QUANTO MAIS SIMPLES E CLARA FOR A ARGUMENTAÇÃO,
+                                        MAIS FÁCIL SERÁ DE CONVENCER O CLIENTE A ACEITAR A ADEQUAÇÃO.
+                                    </b>
+                                </font>
+                                <br>
+                                <br>
+                                <font size="3px">
+                                    <b>
+                                        ► UM MODO DE ARGUMENTAR É <font color="purple">ALEGAR A BAIXA UTILIZAÇÃO</font>
+                                        NOS SERVIÇOS DE TELEFONE:
+                                    </b>
+                                </font>
+                                <br>
+                                <br>
+                                <p class="modal-ex">
+                                    <font size="3px" color="purple">
+                                        <b>
+                                            <i>
+                                                "SENHOR(A), VERIFIQUEI AQUI QUE O SENHOR(A) POSSUI (INFORME O PLANO QUE
+                                                O CLIENTE POSSUI),
+                                                <br>
+                                                E PELO SEU HISTÓRICO DE CONSUMO, O SENHOR(A) UTILIZA MUITO POUCO O SEU
+                                                TELEFONE,
+                                                <br>
+                                                ENTÃO A VIVO DISPONIBILIZOU UMA REDUÇÃO NO VALOR DO SEU PLANO, PARA QUE
+                                                O PAGAMENTO FIQUE MAIS ACESSÍVEL."
+                                            </i>
+                                        </b>
+                                    </font>
+                                </p>
+                                <br>
+                                <br>
+                                <font size="3px">
+                                    <b>
+                                        ► EM CASOS DE <font color="purple">ALEGA PAGAMENTO</font>, OFERTE A REDUÇÃO NO
+                                        PLANO COMO UM BÔNUS PELO CLIENTE JÁ TER PAGO A FATURA:
+                                    </b>
+                                </font>
+                                <br>
+                                <br>
+                                <p class="modal-ex">
+                                    <font size="3px" color="purple">
+                                        <b>
+                                            <i>
+                                                "BOM SENHOR(A), COMO O PAGAMENTO DA FATURA QUE ESTAVA EM ABERTO JÁ FOI
+                                                EFETUADO,"
+                                                <br>
+                                                E NÃO HÁ MAIS NENHUM DÉBITO EM ABERTO, A VIVO DISPONIBILIZOU UM DESCONTO
+                                                PARA O SENHOR(A) PELOS PRÓXIMOS MESES.."
+                                            </i>
+                                        </b>
+                                    </font>
+                                </p>
+                                <br>
+                                <br>
+                                <font size="3px">
+                                    <b>
+                                        ► EM CASOS DE <font color="purple">PROMESSA</font> A OFERTA PODE SER UMA
+                                        GARANTIA DE BENEFÍCIO, CASO O CLIENTE PAGUE NA DATA COMBINADA:
+                                    </b>
+                                </font>
+                                <br>
+                                <br>
+                                <p class="modal-ex">
+                                    <font size="3px" color="purple">
+                                        <b>
+                                            <i>
+                                                "SENHOR(A), JÁ QUE DEIXAMOS UMA DATA DE PAGAMENTO AGENDADA, A VIVO
+                                                DISPONIBILIZA UMA REDUÇÃO NO VALOR DAS SUAS PRÓXIMAS FATURAS,
+                                                <br>
+                                                MAS PARA QUE O DESCONTO SEJA DISPONIBILIZADO, É IMPORTANTE QUE O
+                                                PAGAMENTO DA FATURA PERMANEÇA DENTRO DO PRAZO AGENDADO.."
+                                            </i>
+                                        </b>
+                                    </font>
+                                </p>
+                                <br>
+                                <br>
+                                <font size="3px">
+                                    <b>
+                                        ► CASO, O CLIENTE JÁ TENHA <font color="purple">DESCONTO</font>, UTILIZE UMA
+                                        ARGUMENTAÇÃO DE RENOVAÇÃO:
+                                    </b>
+                                </font>
+                                <br>
+                                <br>
+                                <p class="modal-ex">
+                                    <font size="3px" color="purple">
+                                        <b>
+                                            <i>
+                                                "SENHOR(A), PELO QUE ESTOU VENDO EM SUA FATURA, O SENHOR POSSUI (INFORME
+                                                O PLANO DO CLIENTE),
+                                                <br>
+                                                ESSE DESCONTO QUE O SENHOR TEM É VÁLIDO POR 12 MESES E O SENHOR JÁ ESTÁ
+                                                EM SUA "X" PARCELA PROMOCIONAL,
+                                                <br>
+                                                ENTÃO GOSTARIA DE SABER SE O SENHOR TEM INTERESSE EM ESTAR RENOVANDO SEU
+                                                PACOTE PROMOCIONAL POR MAIS 12 MESES,
+                                                <br>
+                                                PARA QUE O SENHOR PERMANEÇA PAGANDO UM VALOR MAIS ACESSÍVEL."
+                                            </i>
+                                        </b>
+                                    </font>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- Beneficios -->
+            <li>
+                <div class="collapsible-header">
+                    <img src="img/beneficio.PNG" width="55px" height="55px" class="coll-logo">
+                    <b class="coll-name">BENEFÍCIOS</b>
+                </div>
+                <div class="collapsible-body">
+                    <!-- fatura digital -->
+                    <div class="boxOffer">
+                        <div class="box-Logo">
+                            <img src="img/fatDigital.PNG" width="75px" height="65px">
+                        </div>
+                        <div class="boxHead">
+                            <div class="boxText"><b>FATURA DIGITAL</b></div>
+                            <a class="waves-effect waves-light btn modal-trigger purple" href="#modal7">ABRIR</a>
+                        </div>
+                        <div id="modal7" class="modal" align="center">
+                            <div class="modal-content">
+                                <font size="4px" color="purple">
+                                    <b>
+                                        BENEFÍCIOS - FATURA DIGITAL
+                                    </b>
+                                </font>
+                                <br>
+                                <br>
+                                <p class="modal-ex">
+                                    <font size="3px">
+                                        <b>
+                                            <br>
+                                            QUESTIONE O CLIENTE SE ELE <font color="purple">POSSUI INTERESSE EM FATURA
+                                                DIGITAL</font>,
+                                            <br>
+                                            NO QUAL O BOLETO CHEGARÁ POR E-MAIL, EVITANDO ESQUECIMENTOS E FILAS.
+                                            <br>
+                                            <br>
+                                            <font color="purple">* LEMBRE-SE DE CONFIRMAR COM O CLIENTE, O ENDEREÇO E/OU
+                                                E-MAIL NO QUAL ELE DESEJA RECEBER A FATURA. *</font>
+                                            <br>
+                                            <br>
+                                        </b>
+                                    </font>
+                                </p>
+                                <br>
+                                <div class="modal-img">
+                                    <br>
+                                    <img src="img/beneficios/inicialGPS.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px">
+                                            <br>
+                                            <b>
+                                                CASO O CLIENTE ACEITE ALTERAR A FORMA DE ENVIO,
+                                                <br>
+                                                REPITA O <font color="purple">PROCEDIMENTO</font> PADRÃO DE <font
+                                                    color="purple">ANALISAR A FATURA</font>,
+                                                <br>
+                                                E DESÇA ATÉ O FINAL DA PÁGINA, NO QUESTIONÁRIO.
+                                                <br>
+                                                <br>
+                                                <font color="purple">LEIA ATENTAMENTE AO QUESTIONÁRIO</font>, E RESPONDA
+                                                EM SUA ORDEM,
+                                                <br>
+                                                SELECIONANDO "SIM" E ENVIANDO SUA RESPOSTA.
+                                            </b>
+                                            <br>
+                                            <br>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <img src="img/beneficios/gps - pessoa física.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px">
+                                            <b>
+                                                <br>
+                                                AO FINAL DO QUESTIONÁRIO, APARECERÁ UMA TELA DE CONFIRMAÇÃO,
+                                                <br>
+                                                ONDE APARECERÁ O <font color="purple">PROTOCOLO.</font>
+                                                <br>
+                                                <br>
+                                                <font color="purple">PREENCHA COM O NOME DO CLIENTE, CRM - SELECIONE O
+                                                    CRM - COBRANÇA</font>
+                                                <br>
+                                                E CONFIRME A AÇÃO.
+                                            </b>
+                                            <br>
+                                            <br>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <img src="img/beneficios/fatura digital.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px">
+                                            <b>
+                                                LEMBRE-SE DE PASSAR O <font color="purple">PROTOCOLO DE ALTERAÇÃO AO
+                                                    CLIENTE</font>
+                                            </b>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- alteração vencimento -->
+                    <div class="boxOffer">
+                        <div class="box-Logo">
+                            <img src="img/vencimento.PNG" width="75px" height="65px">
+                        </div>
+                        <div class="boxHead">
+                            <div class="boxText"><b>ALTERAÇÃO DE VENCIMENTO</b></div>
+                            <a class="waves-effect waves-light btn modal-trigger purple" href="#modal8">ABRIR</a>
+                        </div>
+                        <div id="modal8" class="modal" align="center">
+                            <div class="modal-content">
+                                <font size="4px" color="purple">
+                                    <b>
+                                        BENEFÍCIOS - ALTERAÇÃO DE VENCIMENTO
+                                    </b>
+                                </font>
+                                <br>
+                                <br>
+                                <p class="modal-ex">
+                                    <font size="3px">
+                                        <b>
+                                            <br>
+                                            QUESTIONE O CLIENTE SE A <font color="purple">DATA DE VENCIMENTO DA FATURA
+                                            </font> É FAVORÁVEL PARA O PAGAMENTO, CASO NÃO SEJA,
+                                            <br>
+                                            OFEREÇA A <font color="purple">ALTERAÇÃO DO VENCIMENTO</font> COMO UM
+                                            BENEFÍCIO PARA FACILITAR O PAGAMENTO EM DIA.
+                                            <br>
+                                            <br>
+                                            <font color="purple">SE O CLIENTE ACEITAR</font>, REPITA O PROCEDIMENTO
+                                            PADRÃO PARA <font color="purple">ANALISAR FATURA</font>
+                                            <br>
+                                            E DESÇA ATÉ O FINAL DA PÁGINA, NO QUESTIONÁRIO DE PF (PESSOA FÍSICA).
+                                            <br>
+                                            <br>
+                                        </b>
+                                    </font>
+                                </p>
+                                <br>
+                                <div class="modal-img">
+                                    <br>
+                                    <img src="img/beneficios/gps - pessoa física.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px">
+                                            <b>
+                                                <br>
+                                                <font color="purple">LEIA ATENTAMENTE AO QUESTIONÁRIO</font>, E RESPONDA
+                                                EM SUA ORDEM,
+                                                <br>
+                                                SELECIONANDO "SIM" E ENVIANDO SUA RESPOSTA.
+                                                <br>
+                                                <br>
+                                                <font color="purple">LEMBRE-SE</font> DE OFERTAR AS <font
+                                                    color="purple">DATAS DISPONÍVEIS</font> NO SISTEMA.
+                                                <br>
+                                                <br>
+                                            </b>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <img src="img/beneficios/diasvencimento.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px">
+                                            <b>
+                                                <br>
+                                                APÓS APRESENTAR AS DATAS E O CLIENTE INFORMAR QUAL O DIA DE SUA
+                                                PREFERÊNCIA,
+                                                <br>
+                                                INFORME-O SOBRE O <font color="purple">CICLO DE FATURAMENTO</font>, E
+                                                QUE ELE RECEBERÁ UMA <font color="purple">FATURA PROPORCIONAL</font> A
+                                                SUA ALTERAÇÃO.
+                                                <br>
+                                                <br>
+                                            </b>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <img src="img/beneficios/altvencimentoverificacao.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px">
+                                            <b>
+                                                <br>
+                                                AO FINAL DO QUESTIONÁRIO, APARECERÁ UMA TELA DE CONFIRMAÇÃO, NO QUAL
+                                                SERÁ GERADO O <font color="purple">PROTOCOLO</font>.
+                                                <br>
+                                                <br>
+                                                <font color="purple">PREENCHA COM A DATA ESCOLHIDA, O NOME DO CLIENTE,
+                                                    SELECIONE CRM - COBRANÇA</font>
+                                                <br>
+                                                E CONFIRME A AÇÃO.
+                                                <br>
+                                                <br>
+                                            </b>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <img src="img/beneficios/altvencimento.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px">
+                                            <b>
+                                                LEMBRE-SE DE PASSAR O <font color="purple">PROTOCOLO DE ALTERAÇÃO AO
+                                                    CLIENTE</font>
+                                            </b>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- DACC -->
+                    <div class="boxOffer">
+                        <div class="box-Logo">
+                            <img src="img/debito.PNG" width="75px" height="65px">
+                        </div>
+                        <div class="boxHead">
+                            <div class="boxText"><b>DÉBITO AUTOMÁTICO</b></div>
+                            <a class="waves-effect waves-light btn modal-trigger purple" href="#modal9">ABRIR</a>
+                        </div>
+                        <div id="modal9" class="modal" align="center">
+                            <div class="modal-content">
+                                <font size="4px" color="purple">
+                                    <b>
+                                        BENEFÍCIOS - DÉBITO AUTOMÁTICO
+                                    </b>
+                                </font>
+                                <br>
+                                <br>
+                                <p class="modal-ex">
+                                    <font size="3px">
+                                        <b>
+                                            <br>
+                                            <font color="purple">SAIMOS DO GPS E VAMOS PARA O SIEBEL...</font> QUESTIONE
+                                            O CLIENTE SE ELE POSSUI INTERESSE EM <font color="purple">DACC</font>
+                                            (DÉBITO AUTOMÁRICO EM CONTA CORRENTE),
+                                            <br>
+                                            O VALOR SERÁ <font color="purple">DESCONTADO MENSALMENTE</font> DO BANCO DO
+                                            TITULAR DA LINHA, EVITANDO ENFRENTAR FILAS E ESQUECIMENTOS.
+                                            <br>
+                                            <br>
+                                            <font color="purple">SE O CLIENTE ACEITAR</font> O DÉBITO EM CONTA, INSIRA O
+                                            <font color="purple">CPF</font> NA BUSCA DE DOCUMENTOS
+                                            <br>
+                                            E SELECIONE O <font color="purple">NOME DO CLIENTE</font>.
+                                            <br>
+                                            <br>
+                                        </b>
+                                    </font>
+                                </p>
+                                <br>
+                                <div class="modal-img">
+                                    <br>
+                                    <img src="IMG/procedimentos/inicialSiebel.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px">
+                                            <b>
+                                                <br>
+                                                APÓS ABRIR A PÁGINA INICIAL VEMOS DADOS REFERENTES AO <font
+                                                    color="purple">PLANO DO CLIENTE</font>,
+                                                <br>
+                                                E AS <font color="purple">ÚLTIMAS ALTERAÇÕES</font> FEITAS POR ELE.
+                                                <br>
+                                                <br>
+                                            </b>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <img src="img/beneficios/siebel planos.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px">
+                                            <b>
+                                                <br>
+                                                COMO O CLIENTE ACEITOU O DÉBITO EM CONTA, VAMOS PARA A OPÇÃO <font
+                                                    color="purple">PERFIL DE COBRANÇA</font>
+                                                <br>
+                                                E EM SEGUIDA, SELECIONE <font color="purple">DÉBITO AUTOMÁTICO</font>.
+                                                <br>
+                                                <br>
+                                            </b>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <img src="img/beneficios/siebel.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px">
+                                            <b>
+                                                <br>
+                                                UMA NOVA ABA IRÁ APARECER, NELA VOCÊ IRÁ SELECIONAR O <font
+                                                    color="purple">BANCO ESCOLHIDO</font> PELO TITULAR,
+                                                E COLOCARÁ OS <font color="purple">DADOS REFERENTES A CONTA</font>.
+                                                <br>
+                                                <br>
+                                            </b>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <img src="img/beneficios/dacc.PNG">
+                                    <br>
+                                    <br>
+                                    <p class="modal-ex">
+                                        <font size="3px">
+                                            <b>
+                                                <br>
+                                                APÓS FINALIZAR OS DADOS DA CONTA, GRAVE A AÇÃO E PASSE O <font
+                                                    color="purple">PROTOCOLO GERADO AO CLIENTE</font>.
+                                                <br>
+                                                <br>
+                                                LEMBRE-SE DE INFORMA-LO QUE SE FOR <font color="purple">APROVADO</font>,
+                                                O PRÓPRIO BANCO ENTRARÁ EM CONTATO PARA <font color="purple">FINALIZAR A
+                                                    AUTORIZAÇÃO DE DESCONTO MENSAL</font>.
+                                                <br>
+                                                <br>
+                                            </b>
+                                        </font>
+                                    </p>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                            </div>
+                        </div>
+                    </div>
+            </li>
+            <!-- Tabela de valores -->
+            <li>
+                <div class="collapsible-header">
+                    <img src="img/ajuda.PNG" width="55px" height="55px" class="coll-logo">
+                    <b class="coll-name">LISTAGEM DE VALORES</b>
+                </div>
+                <div class="collapsible-body">
+                    <!-- fatura digital -->
+                    <div class="boxOffer">
+                        <div class="box-Logo">
+                            <img src="img/tabela_valores.PNG" width="75px" height="65px">
+                        </div>
+                        <div class="boxHead">
+                            <div class="boxText"><b>TABELA</b></div>
+                            <a class="waves-effect waves-light btn modal-trigger purple" href="#modal10">ABRIR</a>
+                        </div>
+                        <div id="modal10" class="modal" align="center">
+                            <div class="modal-content">
+                                <font size="4px" color="purple">
+                                    <b>
+                                        TABELA - VALORES FIXOS
+                                    </b>
+                                </font>
+                                <br>
+                                <br>
+                                <p class="modal-ex">
+                                    <font size="3px">
+                                        <b>
+                                            <br>
+                                            AQUI VOCÊ IRA ENCONTRAR VALORES JÁ SIMULADOS PARA PLANOS QUE APARECEM COM
+                                            MAIS FREQUENCIA PARA SEREM ADEQUADOS.
+                                            <br><br>
+                                        </b>
+                                    </font>
+                                </p>
+                                <br>
+                                <div class="modal-ex" align="center">
+                                    <b>
+                                    <table>
+                                    <tbody>
+                                    <tr>
+                                    <td>ILIMITADO FIXO LOCAL  + <font color="purple">1 Mbps</font></td>
+                                    <td>R$ 57,89</td>
+                                    </tr>
+                                    <tr>
+                                    <td>ILIMITADO FIXO LOCAL  + <font color="purple">2 Mbps</font></td>
+                                    <td>R$ 64,89</td>
+                                    </tr>
+                                    <tr>
+                                    <td>ILIMITADO FIXO LOCAL  + <font color="purple">4 Mbps</font></td>
+                                    <td>R$ 84,89</td>
+                                    </tr>
+                                    <tr>
+                                    <td>ILIMITADO FIXO LOCAL  + <font color="purple">8 Mbps</font></td>
+                                    <td>R$ 94,98</td>
+                                    </tr>
+                                    <tr>
+                                    <td>ILIMITADO FIXO LOCAL  + <font color="purple">10Mbps</font></td>
+                                    <td>R$ 94,98</td>
+                                    </tr>
+                                    <tr>
+                                    <td>ILIMITADO FIXO LOCAL  + <font color="purple">15 Mbps</font></td>
+                                    <td>R$ 94,98</td>
+                                    </tr>
+                                    <tr>
+                                    <td>ILIMITADO FIXO LOCAL  + <font color="purple">25 Mbps</font></td>
+                                    <td>R$ 94,98</td>
+                                    </tr>
+                                    <tr>
+                                    <td>ILIMITADO FIXO LOCAL  + <font color="purple">50 Mbps</font></td>
+                                    <td>R$ 114,98</td>
+                                    </tr>
+                                    <tr>
+                                    <td>ILIMITADO FIXO LOCAL  + <font color="purple">100 Mbps</font></td>
+                                    <td>R$ 134,98</td>
+                                    </tr>
+                                    <tr>
+                                    <td>ILIMITADO FIXO LOCAL  + <font color="purple">200 Mbps</font></td>
+                                    <td>R$ 174,98</td>
+                                    </tr>
+                                    <tr>
+                                    <td>ILIMITADO FIXO LOCAL  + <font color="purple">300 Mbps</font></td>
+                                    <td>R$ 224,98</td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                </b>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!-- fim -->
+    </div>
+    <!-- div OP atendimento -->
+    <div id="guia-3">
+        <!-- container de escolhas -->
+        <ul class="collapsible">
+            <!-- procedimento - atendimento -->
+            <li>
+                <div class="collapsible-header">
+                    <img src="img/procedimentosnew.PNG" width="60px" height="65px" class="coll-logo">
+                    <b class="coll-name">PROCEDIMENTOS</b>
+                </div>
+                <div class="collapsible-body">
+                    <div class="boxOffer">
+                        <div class="box-Logo">
+                            <img src="img/procedimento_atendimento.PNG" width="75px" height="65px">
+                        </div>
+                        <div class="boxHead">
+                            <div class="boxText"><b>CHECKLIST</b></div>
+                            <a class="waves-effect waves-light btn modal-trigger purple" href="#modal11">ABRIR</a>
+                        </div>
+                        <div id="modal11" class="modal" align="center">
+                            <div class="modal-content">
+                                <font size="4px" color="purple">
+                                    <b>
+                                        CHECKLIST - ATENDIMENTO
+                                    </b>
+                                </font>
+                                <br>
+                                <br>
+                                <p class="modal-ex">
+                                    <font size="3px">
+                                        <b>
+                                            <br>
+                                            ► ATENDER NO PRAZO DE <font color="purple">5 SEGUNDOS</font> SE
+                                            APRESENTANDO.
+                                            <br><br>
+                                            ► SOLICITAR TITULAR E/OU RESPONSÁVEL PELA LINHA.
+                                            <br><br>
+                                            ► <font color="purple">CONFIRMAÇÃO DE PID</font>: NOME COMPLETO.
+                                            <br>
+                                            <font color="purple">(EM CASOS DE TERCEIROS, CONSULTAR O NOME E O GRAU DE
+                                                PARENTESCO)</font>
+                                            <br><br>
+                                            ► <font color="purple">NEGOCIAÇÃO</font>: UTILIZE A <font color="purple">
+                                                RÉGUA DE COBRANÇA</font> PARA ARGUMENTAR COM O CLIENTE, PRIORIZANDO O
+                                            PAGAMENTO IMEDIATO.
+                                            <br><br>
+                                            ► <font color="purple">INADIMPLÊNCIA</font>: PERGUNTE AO CLIENTE O MOTIVO
+                                            PELO QUAL O PAGAMENTO FOI REALIZADO EM ATRASO.
+                                            <br><br>
+                                            ► <font color="purple">ATUALIZAÇÃO CADASTRAL</font>: TELEFONE, E-MAIL E
+                                            ENDEREÇO.
+                                            <br><br>
+                                            ► <font color="purple">SELO DE ACORDO</font>: RELEMBRAR FATURAS EM ABERTO E
+                                            VALORES.
+                                            <br><br>
+                                            ► <font color="purple">QUEBRA DE ACORDO COM A VIVO</font>: CONSEQUÊNCIAS DO
+                                            NÃO PAGAMENTO.
+                                            <br><br>
+                                            ► <font color="purple">FRASEOLOGIA FINAL:</font> “A VIVO AGRADECE! TENHA UM
+                                            BOM DIA! / BOA TARDE! / BOA NOITE!”
+                                            <br>
+                                            <br>
+                                        </b>
+                                    </font>
+                                </p>
+                                <br>
+                                <font size="4px">
+                                    <b>
+                                        EXEMPLO DE ATENDIMENTO EM CHECK LIST:<font color="purple"> PROMESSA DE FATURA
+                                        </font>
+                                    </b>
+                                </font>
+                                <br>
+                                <br>
+                                <p class="modal-ex">
+                                    <font size="3px" color="purple">
+                                        <b>
+                                            <i>
+                                                <br>
+                                                "ALÔ, BOM DIA, MEU NOME É JOÃO, EU FALO DA ASSESSORIA SERVICES EM NOME
+                                                DA OPERADORA VIVO, ANA SE ENCONTRA?
+                                                <br><br>
+                                                PARA MOTIVOS DE SEGURANÇA A LIGAÇÃO SEGUE GRAVADA, ME CONFIRMA SEU NOME
+                                                COMPLETO PARA QUE EU POSSA PROSSEGUIR COM O ATENDIMENTO?
+                                                <br><br>
+                                                O MOTIVO DO MEU CONTATO HOJE É REFERENTE A FATURA QUE VENCEU NO DIA
+                                                (XX/XX/XXXX)
+                                                <br>
+                                                E SE ENCONTRA NO BLOQUEIO “XX” VALOR TOTAL DE R$ “XXX,XX”.
+                                                <br><br>
+                                                A SENHORA RECEBEU ESSA FATURA? E SERIA POSSÍVEL UM PAGAMENTO ENTRE HOJE
+                                                E AMANHÃ?
+                                                <br><br>
+                                                O(A) SENHOR(A) PODE ME INFORMAR POR QUAL MOTIVO O PAGAMENTO OCORREU EM
+                                                ATRASO?
+                                                <br><br>
+                                                PARA UMA RÁPIDA ATUALIZAÇÃO CADASTRAL, ME CONFIRMA O ENDEREÇO DE
+                                                INSTALAÇÃO DA LINHA?
+                                                <br><br>
+                                                TELEFONE PRA CONTATO HAVERIA ALGUM OUTRO ALÉM DESSE?
+                                                <br><br>
+                                                E-MAIL O SENHOR(A) POSSUI?
+                                                <br><br>
+                                                DEIXEI AGENDADO ENTÃO, O PAGAMENTO DA FATURA QUE VENCEU DIA (XX/XX/XXXX)
+                                                NO VALOR TOTAL DE R$XXX,XX.
+                                                <br><br>
+                                                É IMPORTANTE QUE O PAGAMENTO DA FATURA OCORRA DENTRO DO PRAZO AGENDADO
+                                                PARA QUE NÃO OCORRA UMA QUEBRA DE ACORDO COM A VIVO,
+                                                <br>
+                                                GERANDO JUROS E MULTAS A FATURA, BLOQUEIOS A LINHA E MAIS LIGAÇÕES DE
+                                                COBRANÇAS.
+                                                <br><br>
+                                                ALGUMA DÚVIDA? A VIVO AGRADECE E DESEJA UM BOM DIA."
+                                                <br><br>
+                                                <img src="img/sorriso_na_voz.PNG" width="75px" height="65px">
+                                                <br><br>
+                                            </i>
+                                        </b>
+                                    </font>
+                                </p>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- regua de cobrança -->
+            <li>
+                <div class="collapsible-header">
+                    <img src="img/ajuda.PNG" width="60px" height="65px" class="coll-logo">
+                    <b class="coll-name">RÉGUA DE COBRANÇA</b>
+                </div>
+                <div class="collapsible-body">
+                    <div class="boxOffer">
+                        <div class="box-Logo">
+                            <img src="img/regua_cobranca.PNG" width="75px" height="70px">
+                        </div>
+                        <div class="boxHead">
+                            <div class="boxText"><b>BLOQUEIOS</b></div>
+                            <a class="waves-effect waves-light btn modal-trigger purple" href="#modal12">ABRIR</a>
+                        </div>
+                        <div id="modal12" class="modal" align="center">
+                            <div class="modal-content">
+                                <font size="4px" color="purple">
+                                    <b>
+                                        RÉGUA DE COBRANÇA
+                                    </b>
+                                </font>
+                                <br>
+                                <br>
+                                <p class="modal-ex">
+                                    <font size="3px">
+                                        <b>
+                                            <br>
+                                            DURANTE TODO O PROCESSO DE NEGOCIAÇÃO, A ARGUMENTAÇÃO CERTEIRA PODE SER A
+                                            CHAVE PARA REVERTER O SEM INTERESSE DO CLIENTE,
+                                            EM UMA PROMESSA DE PAGAMENTO.
+                                            <br><br>
+                                            PRIMEIRAMENTE, VAMOS CONHECER ALGUNS ITENS DA RÉGUA DE COBRANÇA QUE PODEM
+                                            AJUDÁ-LO NA ARGUMENTAÇÃO.
+                                            <br><br>
+                                        </b>
+                                    </font>
+                                </p>
+                                <br>
+                                <font size="4px">
+                                    <b>
+                                        <font color="purple">BLOQUEIOS</font>
+                                    </b>
+                                </font>
+                                <br>
+                                <br>
+                                <p class="modal-ex">
+                                    <b>
+                                        <br><br>
+                                        DE ACORDO COM OS DIAS DE ATRASO QUE O CLIENTE POSSUI, SEUS SERVIÇOS PASSAM POR
+                                        DETERMINADOS BLOQUEIOS.
+                                        <br><br>
+                                        NO QUAL A QUALIDADE DOS SERVIÇOS VAI SENDO REDUZIDA GRADATIVAMENTE.
+                                        ELES OCORREM DA SEGUINTE FORMA:
+                                        <br><br>
+                                        <font color="purple">BLOQUEIO PARCIAL: 18 DIAS - REDUÇÃO INTERNET, TELEFONE E TV
+                                        </font>
+                                        <br><br>
+                                        <font color="purple">BLOQUEIO TOTAL: 48 DIAS – BLOQUEIO TOTAL INTERNET, TELEFONE
+                                            E TV</font>
+                                        <br><br>
+                                        <font color="purple">RECISSÃO/DESCONEXÃO LINHA: 122 DIAS</font>
+                                        <br><br>
+                                        <font color="purple">NEGATIVAÇÃO: 133 DIAS</font>
+                                        <br><br>
+                                    </b>
+                                </p>
+                                <br><br>
+                                <div class="modal-footer">
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- falha critica -->
+            <li>
+                <div class="collapsible-header">
+                    <img src="img/critica.PNG" width="60px" height="65px" class="coll-logo">
+                    <b class="coll-name">FALHA CRÍTICA</b>
+                </div>
+                <div class="collapsible-body">
+                    <div class="boxOffer">
+                        <div class="box-Logo">
+                            <img src="img/falha_critica.PNG" width="75px" height="70px">
+                        </div>
+                        <div class="boxHead">
+                            <div class="boxText"><b>FALHA CRÍTICA</b></div>
+                            <a class="waves-effect waves-light btn modal-trigger purple" href="#modal13">ABRIR</a>
+                        </div>
+                        <div id="modal13" class="modal" align="center">
+                            <div class="modal-content">
+                                <font size="4px" color="purple">
+                                    <b>
+                                        FALHA CRÍTICA
+                                    </b>
+                                </font>
+                                <br>
+                                <br>
+                                <p class="modal-ex">
+                                    <font size="3px">
+                                        <b>
+                                            <br>
+                                            <img src="img/bad_prod.PNG" width="95px" height="75px">
+                                            <br>
+                                            EXISTEM ALGUNS PROCEDIMENTOS QUE SÃO DE EXTREMA IMPORTÂNCIA, A NÃO
+                                            REALIZAÇÃO DELES,
+                                            <br>
+                                            PODE PREJUDICAR O SEU DESEMPENHO, E SEU ATENDIMENTO.
+                                            <br><br>
+                                            <font color="purple">A MONITORIA ESTÁ ATENTA, E A NÃO REALIZAÇÃO DESTES
+                                                PROCEDIMENTOS PODE
+                                                REDUZIR SUA NOTA.</font>
+                                            <br><br>
+                                            PRIMEIRAMENTE, VAMOS CONHECER ALGUNS ITENS DA RÉGUA DE COBRANÇA QUE PODEM
+                                            AJUDÁ-LO NA ARGUMENTAÇÃO.
+                                            <br><br>
+                                        </b>
+                                    </font>
+                                </p>
+                                <br>
+                                <font size="4px">
+                                    <b>
+                                        <font color="purple">VAMOS CONHECER ALGUMAS FALHAS CRÍTICAS:</font>
+                                    </b>
+                                </font>
+                                <br><br>
+                                <p class="modal-ex">
+                                    <b>
+                                        <br>
+                                        <img src="img/hag.PNG" width="85px" height="70px">
+                                        <br>
+                                        <font color="purple" size="4px">NÃO CONFIRMAR PID:</font>
+                                        <br><br>
+                                        EM ALGUNS CASOS, O CLIENTE PODE SE NEGAR A INFORMAR O NOME COMPLETO, MAS PARA
+                                        QUE NÃO OCORRA UMA QUEBRA DE SIGILO,
+                                        <br>
+                                        CONTORNE AS OBJEÇÕES E FAÇA O CLIENTE ENTENDER A NECESSIDADE DO PID.
+                                        <br><br>
+                                        JAMAIS PROSSIGA COM O ATENDIMENTO SEM A
+                                        CONFIRMAÇÃO DO NOME COMPLETO, OU DOS 3 PRIMEIROS DÍGITOS DO CPF DO CLIENTE.
+                                        <br><br>
+                                    </b>
+                                </p>
+                                <br><br>
+                                <p class="modal-ex">
+                                    <b>
+                                        <br>
+                                        <img src="img/hag.PNG" width="85px" height="70px">
+                                        <br>
+                                        <font color="purple" size="4px">NÃO INFORMAR CONTRATOS/FATURAS E VALORES:</font>
+                                        <br><br>
+                                        O CLIENTE, PRECISA SABER DO QUE SE TRATA O VALOR PELO QUAL ELE ESTÁ SENDO
+                                        COBRADO.
+                                        <br>
+                                        EM CASOS NO QUAL O CLIENTE TIVER MAIS DE UM CONTRATO, LEMBRE-SE DE
+                                        INFORMAR OS ÚLTIMOS 3 DÍGITOS DO CONTRATO E A QUAL LINHA ELE PERTENCE.
+                                        <br>
+                                        JAMAIS ESQUEÇA DE INFORMAR A DATA DE VENCIMENTO, E O VALOR TOTAL DO DÉBITO.
+                                        <br><br>
+                                    </b>
+                                </p>
+                                <br><br>
+                                <p class="modal-ex">
+                                    <b>
+                                        <br>
+                                        <img src="img/hag.PNG" width="85px" height="70px">
+                                        <br>
+                                        <font color="purple" size="4px">FALTA DE ESFORÇO / FALTA DE EMPATIA:</font>
+                                        <br><br>
+                                        NÃO PODEMOS ACEITAR O PRIMEIRO "NÃO" DO CLIENTE E SIM SEMPRE ARGUMENTAR, COM
+                                        RÉGUA
+                                        DE COBRANÇA, PARCELAMENTO E MAIS ATRASADA.
+                                        <br>
+                                        A FALTA DE ESFORÇO NÃO SÓ É UMA FALHA CRÍTICA, COMO TAMBÉM É CAPAZ DE REDUZIR A
+                                        NOTA COM A MONITORIA.
+                                        <br>
+                                        ASSIM COMO A FALTA DE EMPATIA COM CLIENTE, SEJA GENTIL AO ESCLARECER AS DÚVIDAS,
+                                        E REPASSAR
+                                        AS INFORMAÇÕES AOS CLIENTES.
+                                        <br><br>
+                                    </b>
+                                </p>
+                                <br><br>
+                                <p class="modal-ex">
+                                    <b>
+                                        <br>
+                                        <img src="img/nao_eft.PNG" width="85px" height="70px">
+                                        <br>
+                                        <font color="purple" size="4px">NÃO REALIZAR ATUALIZAÇÃO CADASTRAL:</font>
+                                        <br><br>
+                                        UMA PARTE FUNDAMENTAL, É A CONFIRMAÇÃO DOS DADOS, ISSO AJUDA A MANTER O SISTEMA
+                                        SEMPRE ATUALIZADO.
+                                        <br>
+                                        A CONFIRMAÇÃO DEVE SER FEITA NA CHAMADA, E REGISTRADA NO
+                                        NECTAR/ZAAP.
+                                        <br><br>
+                                    </b>
+                                </p>
+                                <br><br>
+                                <p class="modal-ex">
+                                    <b>
+                                        <br>
+                                        <img src="img/nao_eft1.PNG" width="85px" height="70px">
+                                        <br>
+                                        <font color="purple" size="4px">PROMESSA E OFERTA FALSA:</font>
+                                        <br><br>
+                                        O CLIENTE PRECISA ESTAR CIENTE DO ACORDO, E/OU ALTERAÇÃO QUE ENVOLVE SEU PLANO.
+                                        <br>
+                                        É UMA FALHA CRÍTICA REGISTRAR NO SISTEMA QUALQUER MUDANÇA OU ACORDO SEM QUE O
+                                        CLIENTE TENHA CONSENTIDO.
+                                        <br><br>
+                                    </b>
+                                </p>
+                                <br><br>
+                                <p class="modal-ex">
+                                    <b>
+                                        <br>
+                                        <img src="img/nao_eft.PNG" width="85px" height="70px">
+                                        <br>
+                                        <font color="purple" size="4px">QUALIFICAÇÃO INCORRETA / NÃO TABULAR A LIGAÇÃO:
+                                        </font>
+                                        <br><br>
+                                        CHEGAMOS A UM PONTO IMPORTANTÍSSIMO!
+                                        <br>
+                                        É PRECISO PRESTAR MUITA ATENÇÃO, POIS A OCORRÊNCIA DEVE SER FIEL A SUA LIGAÇÃO.
+                                        É NECESSÁRIO QUE TODAS AS CHAMADAS SEJAM TABULADAS.
+                                        <br>
+                                        COM A QUALIFICAÇÃO CORRETA VOCÊ AJUDA A EMPRESA A MONTAR A ESTRATÉGIA PARA OS
+                                        PRÓXIMOS DIAS DE TRABALHO.
+                                        <br><br>
+                                    </b>
+                                </p>
+                                <br><br>
+                                <p class="modal-ex">
+                                    <b>
+                                        <br>
+                                        <img src="img/hag.PNG" width="85px" height="70px">
+                                        <br>
+                                        <font color="purple" size="4px">DERRUBAR LIGAÇÃO / NÃO ATENDER O CLIENTE:</font>
+                                        <br><br>
+                                        UMA DAS FALHAS CRÍTICAS MAIS FREQUENTES É O CLIENTE “SEGURAR” A LIGAÇÃO, OU
+                                        SIMPLESMENTE DERRUBA-LA.
+                                        <br>
+                                        ISSO OCORRE QUANDO O OPERADOR FAZ USO INDEVIDO DO
+                                        HANGUP, OU SIMPLESMENTE ENCERRA A LIGAÇÃO INESPERADAMENTE,
+                                        <br>
+                                        INDEPENDENTEMENTE DO
+                                        TEMPO DE CHAMADA.
+                                        <br><br>
+                                    </b>
+                                </p>
+                                <br><br>
+                                <p class="modal-ex">
+                                    <b>
+                                        <br>
+                                        <img src="img/hag.PNG" width="85px" height="70px">
+                                        <br>
+                                        <font color="purple" size="4px">HANGUP:</font>
+                                        <br><br>
+                                        ISSO OCORRE QUANDO O OPERADOR SEGURA O CLIENTE NO MUDO POR MAIS DE <font
+                                            color="purple">00:30</font>,
+                                        INDEPENDENTE DE QUAL FOR A LIGAÇÃO OU ATENDIMENTO.
+                                        <br>
+                                        POR TANTO, VOLTE AO
+                                        ATENDIMENTO A CADA <font color="purple">00:30</font> E SOLICITE QUE O CLIENTE
+                                        AGUARDE MAIS UM MOMENTO, SE
+                                        NECESSÁRIO.
+                                        <br>
+                                        ISSO OCORRE QUANDO O OPERADOR FAZ USO INDEVIDO DO
+                                        HANGUP, OU SIMPLESMENTE ENCERRA A LIGAÇÃO INESPERADAMENTE,
+                                        <br>
+                                        INDEPENDENTEMENTE DO
+                                        TEMPO DE CHAMADA.
+                                        <br><br>
+                                    </b>
+                                </p>
+                                <br><br>
+                                <p class="modal-ex">
+                                    <b>
+                                        <br>
+                                        <img src="img/erradaoo.PNG" width="85px" height="70px">
+                                        <br>
+                                        <font color="purple" size="4px">PASSAR INFORMAÇÕES INCORRETAS:</font>
+                                        <br><br>
+                                        DE ACORDO COM O ARTIGO 71, É CRIME CONTRA AS RELAÇÕES DE CONSUMO:
+                                        <br>
+                                        • UTILIZAR-SE DE AFIRMAÇÕES FALSAS, INCORRETAS OU ENGANOSAS.
+                                        <br>
+                                        ESTEJA ATENTO A CADA INFORMAÇÃO PASSADA AO CLIENTE, PRINCIPALMENTE SE TRATANDO
+                                        DA LINHA, E DOS VALORES EM ABERTO.
+                                        <br><br>
+                                    </b>
+                                </p>
+                                <br><br>
+                                <div class="modal-footer">
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- dicas -->
+            <li>
+                <div class="collapsible-header">
+                    <img src="img/feito.PNG" width="60px" height="65px" class="coll-logo">
+                    <b class="coll-name">DICAS</b>
+                </div>
+                <div class="collapsible-body">
+                    <div class="boxOffer">
+                        <div class="box-Logo">
+                            <img src="img/certo_godd.PNG" width="75px" height="70px">
+                        </div>
+                        <div class="boxHead">
+                            <div class="boxText"><b>DICAS DE MELHORIAS</b></div>
+                            <a class="waves-effect waves-light btn modal-trigger purple" href="#modal14">ABRIR</a>
+                        </div>
+                        <div id="modal14" class="modal" align="center">
+                            <div class="modal-content">
+                                <font size="4px" color="purple">
+                                    <b>
+                                        MELHORANDO QUALIDADE NO ATENDIMENTO
+                                    </b>
+                                </font>
+                                <br><br>
+                                <p class="modal-ex">
+                                    <b>
+                                        <br>
+                                        <img src="img/sorriso_na_voz.PNG" width="75px" height="70px">
+                                        <br>
+                                        <font color="purple" size="4px">SORRISO NA VOZ</font>
+                                        <br><br>
+                                        TENHA SORRISO NA VOZ AO CONVERSAR COM O CLIENTE, UMA VOZ SIMPÁTICA,
+                                        <br>
+                                        FAZ O ATENDIMENTO FLUIR DE UMA MANEIRA MAIS TRANQUILA.
+                                        <br>
+                                        CORDIALIDADE CONTA PARA UM ATENDIMENTO DE QUALIDADE.
+                                        <br><br>
+                                    </b>
+                                </p>
+                                <br><br>
+                                <p class="modal-ex">
+                                    <b>
+                                        <br>
+                                        <img src="img/empatia.PNG" width="85px" height="70px">
+                                        <br>
+                                        <font color="purple" size="4px">EMPATIA AO RESPONDER</font>
+                                        <br><br>
+                                        SEJA GENTIL E PACIENTE AO ESCLARECER AS DÚVIDAS DO CLIENTE, NOSSA FUNÇÃO É
+                                        <br>
+                                        FORNECER AO CLIENTE INFORMAÇÕES CLARAS E UM ATENDIMENTO DE QUALIDADE,
+                                        <br><br>
+                                        CASO NÃO SAIBA COMO PROCEDER, SOLICITE O AUXÍLIO DO SEU SUPERVISOR,
+                                        <br>
+                                        OU ENCAMINHE O CLIENTE A CENTRAL DA VIVO NO 103-15 PARA MAIORES ESCLARECIMENTOS.
+                                        <br><br>
+                                    </b>
+                                </p>
+                                <br><br>
+                                <p class="modal-ex">
+                                    <b>
+                                        <br>
+                                        <img src="img/diminutivo.PNG" width="85px" height="70px">
+                                        <br>
+                                        <font color="purple" size="4px">EVITE USAR DIMINUTIVOS</font>
+                                        <br><br>
+                                        PALAVRAS COMO SÓ UM “MINUTINHO” OU AGUARDE UM “POUQUINHO” DEVEM SER EVITADAS.
+                                        <br><br>
+                                        LEMBRE-SE DE MANTER UMA POSTURA PROFISSIONAL, E SER OBJETIVO EM SUA FALA, SEM
+                                        PERDER O SORRISO NA VOZ.
+                                        <br><br>
+                                    </b>
+                                </p>
+                                <br><br>
+                                <p class="modal-ex">
+                                    <b>
+                                        <br>
+                                        <img src="img/anote_rendimento.PNG" width="95px" height="70px">
+                                        <br>
+                                        <font color="purple" size="4px">MARQUE SEU DESEMPENHO</font>
+                                        <br><br>
+                                        É SEMPRE BOM ACOMPANHAR SEU PROGRESSO E SUA EVOLUÇÃO, UMA DICA É SEMPRE TER
+                                        SALVO O ID OU O CPF DO CLIENTE NO QUAL VOCÊ CONSEGUIU FECHAR UM ACORDO OU UMA
+                                        OFERTA.
+                                        <br><br>
+                                    </b>
+                                </p>
+                                <br><br>
+                                <div class="modal-footer">
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!-- fim -->
+    </div>
+    <!-- div OP fraseologia -->
+    <div id="guia-4">
+        <br>
+        <!-- BOX TEXTO PRINCIPAL -->
+        <div class="Box1">
+            <div class="row">
+                <div class="container" align="center">
+                    <br>
+                    <img src="img/erro.PNG" height="100px" width="125px">
+                    <p>
+                        <b>
+                            <font color="purple">FRASEOLIGIA PARA SISTEMA INOPERANTE</font>
+                            <br>
+                            <br>
+                            "Bom dia/Boa tarde,"
+                            <br>
+                            <br>
+                            "Meu nome é "MARIANA", falo da Assessoria SERVICES, em nome da Operadora Vivo!"
+                            <br>
+                            <br>
+                            "Entramos em contato para tratar de um assunto de seu interesse,
+                            <br>
+                            mas por motivo de inoperância sistêmica, estou impossibilitado(a) de prosseguir com está
+                            ligação.
+                            <br>
+                            Pedimos desculpas. Retornaremos em breve.
+                            <br>
+                            Obrigado(a)"
+                            <br>
+                            <br>
+                    </p>
+                    </b>
+                    <div class="duvida">
+                        <img src="img/conf.PNG" height="115px" width="135px">
+                    </div>
+                    <br>
+                    <font color="purple"><b>CLIENTE QUESTIONOU O MOTIVO DA LIGAÇÃO ?</b></font>
+                    <!-- botoes sistema inoperante -->
+                    <br>
+                    <div class="btnsistema">
+                        <a class="waves-effect waves-light btn-small purple lighten-2 yesButton">Sim</a>
+                        <a class="waves-effect waves-light btn-small purple lighten-2 noButton">Não</a>
+                    </div>
+                    <div class="box offerbox">
+                        <br>
+                        <font color="black"><b>
+                                "Neste momento, não consigo consultar o sistema para lhe dar mais informações, mas fique
+                                tranquilo que
+                                retornaremos em breve.
+                                <br>
+                                <br>
+                                Se preferir, pode nos contactar em outro horario por meio de nossa Central de
+                                Atendimento 0800 744 1515,
+                                <br>
+                                de segunda a sábado, das 08h às 22h, exceto em feriados nacionais."
+                            </b>
+                        </font>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- div OP feed back
+    <div id="guia-5">
+        <br>
+        <div class="Box1" align="center">
+            <br>
+            <img src="img/feed.PNG" height="100px" width="100px">
+            <br>
+            <span class="purple-text" align="center">
+                <h6><b>Feedback</b></h6>
+            </span>
+            <div class="rowfeed" method="POST" action="php/enviar_email.php">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="input_text" type="text" data-length="20" name="nome">
+                            <label for="input_text">Digite seu nome</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="textarea2" class="materialize-textarea" name="texto"
+                                data-length="250"></textarea>
+                            <label for="textarea2">Deixe seu comentário</label>
+                        </div>
+                    </div>
+                </form>
+                <button class="btn waves-effect waves-light purple sendButton" type="submit" name="enviar">Enviar
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <!--JavaScript-->
+    <script src="js/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/materialize.min.js"></script>
+    <!-- Jquery -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
