@@ -1,0 +1,55 @@
+  /* Reset */
+  * {font-family: 'Open Sans', sans-serif;  box-sizing: border-box; border: none; outline: none;} 
+  ul{list-style: none;}
+  /* NavBar */
+  .nav-extended{position: relative; width: 100%;}
+  .nav-content{margin: auto; background-color: rgb(102, 0, 153);}
+  .nav-content > ul {width: max-content; margin: auto;}
+  .nav-extended > .nav-wrapper{background-color: rgb(102, 0, 153); position: relative;}
+  .nav-extended > .nav-logo{width: 112px; height: 112px; margin-bottom: 25%; float: left; background: url(../img/image.jpg) center center/123px no-repeat; position: absolute; z-index:2;}
+  .imgTotal{height: 85px; width: 85px;}
+  .duvida{margin: 0 auto; margin-top: 0rem; margin-left: 5rem; margin-bottom: 0rem; margin-right: 4rem;}
+  .btnsistema{margin: 0 auto; margin-top: 1rem; margin-left: 4rem; margin-bottom: 1rem; margin-right: 6rem;}
+  .rowfeed{margin: 0 auto; margin-top: 5rem; margin-left: 5rem; margin-bottom: 5rem; margin-right: 5rem;}
+  /* collapsible */
+  .coll-logo{margin:auto; padding-left: 30%; width: auto;}
+  .coll-name{width: 56%; font-size: 16px; padding-top: 11px;}
+  .collapsible{margin: auto; align-content: center;}
+  .collapsible-header{width: 800px;}
+  .collapsible-header > b{margin: 0 auto; margin-top: 1rem; margin-left: 1rem; margin-bottom: 1rem; margin-right: 1rem;}
+  .collapsible-body{margin: auto; width: 800px;}
+  /* modal */
+  #modal1{width: 95%;} #modal2{width: 95%;} #modal3{width: 95%;} #modal4{width: 95%;} #modal5{width: 95%;} #modal6{width: 95%;} 
+  #modal7{width: 95%;} #modal8{width: 95%;} #modal9{width: 95%;} #modal10{width: 95%;} #modal11{width: 95%;} #modal12{width: 95%;}
+  #modal13{width: 95%;} #modal14{width: 95%;}
+  .boxOffer{width: auto; padding: 3px 3px 3px 3px; margin: 0px 0px 0px 60px;}
+  .boxText{width: max-content;}
+  .box-Logo{padding-left: 170px; margin: 5px 0px -3px 0px;}
+  .boxHead{width: 55px; margin: -67px 340px 5px 0px; float: right;}
+  .boxHead > b{margin: 0px 15px 0px -10px;}
+  .boxHead > .simulacao{margin: 0px 0px 0px -5px;}
+  .modal-content > p{text-align: center; width: 90%;}
+  .modal-ex{margin: 0 auto; border:2px solid; border-color: rgb(102, 0, 153); border-radius: 2px; width: 65%; height: max-content;}
+  /* GUIA 1 */
+  #escolhas{display: none;}
+  .box{display: none;}
+  .box .offerBox{margin-top: 3rem;}
+  #opcao{margin: auto; width: 330px; height: 50px;}
+  .text{text-align: center;}
+  .Box1{margin: 0 auto; border: 3px solid; width: 65%; height: max-content; border-color: rgb(102, 0, 153); border-radius: 10px;}
+  .geral{margin: 0 auto; border: 2px solid; width: 90%; height: max-content; border-color: rgb(102, 0, 153); border-radius: 10px;}
+  .selo{border: 1px solid; width: 65%; height: max-content; border-color: rgb(102, 0, 153); border-radius: 10px; padding-bottom: 2rem;}
+  .selo1{ border: 1px solid; width: 700px; height: 200px; border-color: rgb(102, 0, 153); border-radius: 10px;}
+  .ul{margin-right: 80%;}
+  /* GUIAS */
+  #guia-2{margin: auto; width: 800px; height: auto;}
+  #guia-3{margin: auto; width: 800px; height: auto;}
+  
+  @media screen and (max-width: 768px){
+    .Box1{width: 100%;}
+	  .nav-extended{width: 100%;}
+    .geral{width: 100%;}
+    .selo{width: 100%;}
+    .brand-logo{font-size: 20px !important;}
+    }
+
